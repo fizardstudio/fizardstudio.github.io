@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Mochamad Firman — Laravel & Go developer, Bandung. Internal tools, inventory and archive systems, delivered complete.">
+<title>Mochamad Firman Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+<style>
+/* Layout: a ledger. Left rail of labels, right column of content — the way a records archive reads. */
+:root{
+  --bg:#f7f6f2; --fg:#1b1a17; --muted:#6b675d; --line:#d9d5ca; --panel:#ffffff;
+  --accent:#9a4a1e; --accent-ink:#ffffff; --ok:#2f6b3a;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15140f;--fg:#ebe7dc;--muted:#a39d8f;--line:#33302a;--panel:#1d1c16;--accent:#e08a4f;--accent-ink:#15140f;--ok:#7fc48a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15140f;--fg:#ebe7dc;--muted:#a39d8f;--line:#33302a;--panel:#1d1c16;--accent:#e08a4f;--accent-ink:#15140f;--ok:#7fc48a;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,5.2vw,54px);letter-spacing:-.01em}
+h2{font-size:clamp(22px,3vw,28px)}
+h3{font-size:20px;font-weight:600}
+p{margin:0}
+a{color:var(--accent)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1fr;gap:20px;padding-bottom:36px;border-bottom:1px solid var(--line)}
+.hero .lede{max-width:62ch;font-size:18px;color:var(--fg)}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 24px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:10px 16px;border-radius:4px;font-weight:600;font-size:15px}
+.cta:focus-visible,.copy:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
+.stat{background:var(--panel);padding:14px 16px}
+.stat b{display:block;font-family:var(--display);font-size:30px;font-weight:500;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+section{display:grid;grid-template-columns:180px minmax(0,1fr);gap:16px 32px;padding-block:36px;border-bottom:1px solid var(--line)}
+section>.rail{position:sticky;top:12px;align-self:start}
+.rail .eyebrow{display:block;margin-bottom:6px}
+.rail p{font-size:14px;color:var(--muted);max-width:22ch}
+.projects{display:grid;gap:22px}
+.project{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;background:var(--panel);border:1px solid var(--line);padding:22px}
+.project header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px}
+.project .tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:12px;border:1px solid var(--line);padding:2px 8px;border-radius:3px;color:var(--muted)}
+.status{font-family:var(--mono);font-size:12px;color:var(--ok);display:inline-flex;align-items:center;gap:6px}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.cols h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;font-weight:500}
+.cols p,.cols li{font-size:15px}
+.cols ul{margin:0;padding-left:18px}
+.numbers{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+.numbers b{color:var(--fg);font-weight:500}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.service{border:1px solid var(--line);padding:18px;background:var(--panel)}
+.service h3{font-size:18px;margin-bottom:8px}
+.service p{font-size:15px;color:var(--fg)}
+.service .from{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:10px}
+.how ol{margin:0;padding-left:20px;display:grid;gap:8px;max-width:62ch}
+.how li{font-size:15px}
+.contact{display:grid;gap:12px}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:var(--mono);font-size:15px}
+.row .k{color:var(--muted);min-width:90px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.copy{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:3px 8px;border-radius:3px;cursor:pointer}
+.note{font-size:14px;color:var(--muted);max-width:62ch}
+footer{padding-top:24px;font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px}
+@media (max-width:720px){section{grid-template-columns:1fr}section>.rail{position:static}}
+@media (prefers-reduced-motion:no-preference){.project{transition:border-color .2s}.project:hover{border-color:var(--accent)}}
+
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.shots.phone{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+.shots a{display:block;border:1px solid var(--line);background:var(--bg);overflow:hidden;aspect-ratio:16/10;min-width:0}
+.shots.phone a{aspect-ratio:9/16}
+.shots img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.shots a:hover{border-color:var(--accent)}
+.shots figcaption{display:none}
+.lightbox{position:fixed;inset:0;background:rgba(10,9,6,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:max(16px,env(safe-area-inset-left,0px))}
+.lightbox.on{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border:1px solid var(--line)}
+.lightbox p{position:absolute;bottom:max(14px,env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;color:#ebe7dc;font-family:var(--mono);font-size:13px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <span class="eyebrow">Mochamad Firman · Bandung, Indonesia · Remote</span>
+    <h1>I build internal systems for offices and small businesses, and ship them complete.</h1>
+    <p class="lede">Inventory, archive tracking, payments, bookkeeping, loan and return workflows. Delivered with installer, backups, tests and a manual the staff can actually read. Laravel and Go, with AI pair-programming to move fast without cutting corners.</p>
+    <div class="meta"><span>Laravel 12 · PHP 8</span><span>Go 1.24</span><span>MySQL</span><span>Windows &amp; Linux deployment</span><span>Written English: fluent · Calls: prefer text</span></div>
+    <div><a class="cta" href="#contact">Work with me</a></div>
+    <div class="stats">
+      <div class="stat"><b>52K</b><span>lines of app code in the largest system</span></div>
+      <div class="stat"><b>1,123</b><span>automated tests in that system</span></div>
+      <div class="stat"><b>5</b><span>products shipped to v1 since Aug 2026</span></div>
+      <div class="stat"><b>1</b><span>government office running it in production</span></div>
+    </div>
+  </header>
+
+  <section id="work">
+    <div class="rail"><span class="eyebrow">Selected work</span><p>Real systems with real users. Screenshots show demo data; client data never leaves their building. Click any image to enlarge.</p></div>
+    <div class="projects">
+
+      <article class="project">
+        <header><h3>ARJUNA — physical archive tracking for a land registry office</h3><span class="status">In production · Kab. Majalengka Land Office</span></header>
+        <div class="tags"><span class="tag">Laravel 12</span><span class="tag">MySQL</span><span class="tag">Blade + Alpine</span><span class="tag">Windows Service installer</span><span class="tag">Offline-first LAN</span></div>
+        <div class="cols">
+          <div><h4>Problem</h4><p>174,000 land title books and survey documents on shelves. The national system records the data but not where the physical sheet is or who is holding it. Staff spent minutes per lookup and lost track of loans.</p></div>
+          <div><h4>What I built</h4><ul><li>Binder → slot → side location model that answers "where is title #X" for every number in a binder's range before a single document is entered</li><li>Loan, return, overdue and stock-take workflows with printed receipts and QR binder labels</li><li>Column-mapping importer for inconsistent exports from different offices</li><li>19 reports, daily backups, one-click updater, Windows Service installer that survives reboots</li></ul></div>
+          <div><h4>Result</h4><p>5,896 binders imported and labeled. Lookup under a minute. Installed on an office PC with no internet, used from phones over office Wi-Fi. Source handed over with a signed license.</p></div>
+        </div>
+        <div class="shots"><a href="img/arj-18.jpg" data-cap="Dashboard: documents, loans, overdue, binder health"><img src="img/arj-18.jpg" alt="Dashboard: documents, loans, overdue, binder health" loading="lazy"></a><a href="img/arj-06.jpg" data-cap="Document detail with computed shelf position and pairing status"><img src="img/arj-06.jpg" alt="Document detail with computed shelf position and pairing status" loading="lazy"></a><a href="img/arj-08.jpg" data-cap="Loan request: title book and survey document in one cart"><img src="img/arj-08.jpg" alt="Loan request: title book and survey document in one cart" loading="lazy"></a><a href="img/arj-10.jpg" data-cap="Printed two-copy loan receipt"><img src="img/arj-10.jpg" alt="Printed two-copy loan receipt" loading="lazy"></a><a href="img/arj-15.jpg" data-cap="Stock-take session with discrepancies collected automatically"><img src="img/arj-15.jpg" alt="Stock-take session with discrepancies collected automatically" loading="lazy"></a></div>
+        <div class="numbers"><span><b>52,428</b> lines</span><span><b>36</b> models</span><span><b>165</b> views</span><span><b>1,123</b> tests</span><span><b>255</b> commits</span><span><b>v1.0.2</b></span></div>
+      </article>
+
+      <article class="project">
+        <header><h3>School Fee Manager — single-file desktop app for private schools</h3><span class="status">v1.5.1 · licensed, reseller program</span></header>
+        <div class="tags"><span class="tag">Go</span><span class="tag">Standard library only</span><span class="tag">Vanilla JS</span><span class="tag">Ed25519 licensing</span><span class="tag">Single .exe</span></div>
+        <div class="cols">
+          <div><h4>Problem</h4><p>Small private schools track tuition in notebooks and Excel. They have no IT staff, unreliable internet, and cannot afford cloud subscriptions.</p></div>
+          <div><h4>What I built</h4><ul><li>One executable, no install, runs on the school PC, shared by several clerks over the LAN</li><li>Payments, receipts with amount-in-words, arrears, WhatsApp reminders, student cards, Excel import/export</li><li>Add-on modules (savings, cash book, attendance, admissions) unlocked by signed license codes</li><li>Automatic daily backups and year-end rollover</li></ul></div>
+          <div><h4>Result</h4><p>Complete product: brochure, demo video script, reseller commission tool and pricing model. Deployable by a non-technical person by double-clicking one file.</p></div>
+        </div>
+        <div class="shots"><a href="img/spp-04.jpg" data-cap="Dashboard: receipts, arrears, payment compliance"><img src="img/spp-04.jpg" alt="Dashboard: receipts, arrears, payment compliance" loading="lazy"></a><a href="img/spp-06.jpg" data-cap="Receive payment: several months in one receipt"><img src="img/spp-06.jpg" alt="Receive payment: several months in one receipt" loading="lazy"></a><a href="img/spp-08.jpg" data-cap="Arrears list, always current"><img src="img/spp-08.jpg" alt="Arrears list, always current" loading="lazy"></a><a href="img/spp-11.jpg" data-cap="Receipt history with audit trail"><img src="img/spp-11.jpg" alt="Receipt history with audit trail" loading="lazy"></a><a href="img/spp-19.jpg" data-cap="Attendance module"><img src="img/spp-19.jpg" alt="Attendance module" loading="lazy"></a></div>
+      </article>
+
+      <article class="project">
+        <header><h3>Neighbourhood Dues — RT/RW fee collection over WhatsApp</h3><span class="status">v0.3.1 · piloting</span></header>
+        <div class="tags"><span class="tag">Go</span><span class="tag">Multi-tenant</span><span class="tag">Chrome extension</span><span class="tag">Mobile-first</span></div>
+        <div class="cols">
+          <div><h4>Problem</h4><p>Neighbourhood treasurers chase monthly dues house by house. Residents have no way to check their status without asking.</p></div>
+          <div><h4>What I built</h4><ul><li>One server, many neighbourhoods, file-based storage per tenant</li><li>Reminders sent from the treasurer's own WhatsApp (group announcement with a red/green map image, one-by-one on phone, or batch on laptop via a Chrome extension) — no WhatsApp Business API cost</li><li>Residents check status by house number, no account needed</li><li>60 API tests, Playwright UI tests, extension tested against a mock WhatsApp Web</li></ul></div>
+          <div><h4>Result</h4><p>Runs on the treasurer's laptop over home Wi-Fi today; same binary deploys to a VPS for public access.</p></div>
+        </div>
+        <div class="shots phone"><a href="img/iuran-beranda.jpg" data-cap="Home: paid 64/96, cash in this month"><img src="img/iuran-beranda.jpg" alt="Home: paid 64/96, cash in this month" loading="lazy"></a><a href="img/iuran-belum-bayar.jpg" data-cap="Unpaid list, grouped by months overdue"><img src="img/iuran-belum-bayar.jpg" alt="Unpaid list, grouped by months overdue" loading="lazy"></a><a href="img/iuran-tagih-beruntun.jpg" data-cap="One-by-one WhatsApp reminders"><img src="img/iuran-tagih-beruntun.jpg" alt="One-by-one WhatsApp reminders" loading="lazy"></a><a href="img/iuran-umumkan-wa.jpg" data-cap="Group announcement with red/green map image"><img src="img/iuran-umumkan-wa.jpg" alt="Group announcement with red/green map image" loading="lazy"></a><a href="img/iuran-catat-pembayaran.jpg" data-cap="Record a payment"><img src="img/iuran-catat-pembayaran.jpg" alt="Record a payment" loading="lazy"></a><a href="img/iuran-kas.jpg" data-cap="Cash book"><img src="img/iuran-kas.jpg" alt="Cash book" loading="lazy"></a></div>
+      </article>
+
+      <article class="project">
+        <header><h3>Field verification tooling for land-data contractors</h3><span class="status">2025–2026 · internal tools</span></header>
+        <div class="tags"><span class="tag">Electron</span><span class="tag">Node.js</span><span class="tag">OCR (ML Kit)</span><span class="tag">Hardware-locked licensing</span></div>
+        <div class="cols">
+          <div><h4>Context</h4><p>Two years as a data-verification lead on national land-registry digitisation projects across four offices. I built the tools my own team needed.</p></div>
+          <div><h4>What I built</h4><ul><li>Multi-tab browser wrapper for the registry portal with phone-camera OCR feeding a side-by-side reconciliation view (match / mismatch / suggested fix)</li><li>Hardware-locked licenses with signed keys and a self-hosted update feed</li></ul></div>
+          <div><h4>Why it matters</h4><p>I know what it's like to be the user of back-office software. I design for the clerk, not the demo.</p></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="rail"><span class="eyebrow">What I can do for you</span><p>Fixed-scope, fixed-price. You see a working version early and pay on delivery.</p></div>
+    <div class="services">
+      <div class="service"><h3>Internal tool from scratch</h3><p>Inventory, bookings, archive or asset tracking, member/fee management, simple POS. Laravel or Go, MySQL, runs on your server or a $5 VPS. Includes installer, backup, user manual.</p><p class="from">from $600 · 2–4 weeks</p></div>
+      <div class="service"><h3>Fix or extend an existing Laravel app</h3><p>Bugs, slow pages, missing reports, upgrades from old Laravel versions, adding roles and audit logs. I read your code first and send a written plan before touching anything.</p><p class="from">from $25/hour or fixed quote</p></div>
+      <div class="service"><h3>Data clean-up and import</h3><p>Messy Excel exports into a clean database: column mapping, duplicate detection, validation reports. I've done this for datasets of 200,000+ rows.</p><p class="from">from $150</p></div>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <div class="rail"><span class="eyebrow">How I work</span><p>Everything in writing, so nothing is lost.</p></div>
+    <ol>
+      <li><b>Short written brief.</b> I send back a one-page plan: scope, what's out of scope, price, dates. No work starts without it.</li>
+      <li><b>Working version early.</b> You get a usable build in the first week, then weekly updates with a changelog you can read.</li>
+      <li><b>Tests and docs are part of the job,</b> not an extra. Every business rule gets an automated test; every delivery gets a manual.</li>
+      <li><b>AI-assisted, human-owned.</b> I use Claude Code as a pair programmer for speed. I review every line, and I'm the one accountable for it.</li>
+      <li><b>Text first.</b> I write English comfortably; I'm not a confident speaker on calls. Chat, email and Loom-style recordings work best, and your project stays documented as a result.</li>
+    </ol>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="rail"><span class="eyebrow">Contact</span><p>Replies within one working day, GMT+7.</p></div>
+    <div class="contact">
+      <div class="row"><span class="k">Email</span><span id="em">fizard.studio@gmail.com</span><button class="copy" data-copy="em">Copy</button></div>
+      <div class="row"><span class="k">WhatsApp</span><span id="wa">+62 857-7755-1485</span><button class="copy" data-copy="wa">Copy</button></div>
+      <div class="row"><span class="k">GitHub</span><a href="https://github.com/fizardstudio">github.com/fizardstudio</a></div>
+      <p class="note">Tell me what your team does by hand today and what it costs you. That's enough for a first plan.</p>
+    </div>
+  </section>
+
+  <footer><span>Mochamad Firman · Fizard Studio · CV. Pelita Kasih Mulia</span><span>Bandung, Indonesia</span></footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy); var t=el.textContent;
+    var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(function(){sel()})}else{sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}
+  });
+});
+</script>
+<div class="lightbox" id="lb" role="dialog" aria-label="Screenshot"><img id="lbimg" src="" alt=""><p id="lbcap"></p></div>
+<script>
+var lb=document.getElementById('lb'),lbi=document.getElementById('lbimg'),lbc=document.getElementById('lbcap');
+document.querySelectorAll('.shots a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();lbi.src=a.getAttribute('href');lbi.alt=a.dataset.cap;lbc.textContent=a.dataset.cap;lb.classList.add('on');});});
+lb.addEventListener('click',function(){lb.classList.remove('on');lbi.src='';});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('on');}});
+</script>
+</body>
+</html>
