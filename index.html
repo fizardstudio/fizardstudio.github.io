@@ -58,6 +58,7 @@ section>.rail{position:sticky;top:12px;align-self:start}
 .cols ul{margin:0;padding-left:18px}
 .numbers{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
 .numbers b{color:var(--fg);font-weight:500}
+.numbers.demo{margin-top:12px}.numbers.demo a{font-weight:600}
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .service{border:1px solid var(--line);padding:18px;background:var(--panel)}
 .service h3{font-size:18px;margin-bottom:8px}
@@ -121,18 +122,31 @@ footer{padding-top:24px;font-family:var(--mono);font-size:12px;color:var(--muted
       </article>
 
       <article class="project">
-        <header><h3>School Fee Manager — single-file desktop app for private schools</h3><span class="status">v1.5.1 · licensed, reseller program</span></header>
+        <header><h3>School Fee Manager — single-file desktop app for private schools</h3><span class="status">v1.5.4 · licensed, reseller program</span></header>
         <div class="tags"><span class="tag">Go</span><span class="tag">Standard library only</span><span class="tag">Vanilla JS</span><span class="tag">Ed25519 licensing</span><span class="tag">Single .exe</span></div>
         <div class="cols">
           <div><h4>Problem</h4><p>Small private schools track tuition in notebooks and Excel. They have no IT staff, unreliable internet, and cannot afford cloud subscriptions.</p></div>
           <div><h4>What I built</h4><ul><li>One executable, no install, runs on the school PC, shared by several clerks over the LAN</li><li>Payments, receipts with amount-in-words, arrears, WhatsApp reminders, student cards, Excel import/export</li><li>Add-on modules (savings, cash book, attendance, admissions) unlocked by signed license codes</li><li>Automatic daily backups and year-end rollover</li></ul></div>
-          <div><h4>Result</h4><p>Complete product: brochure, demo video script, reseller commission tool and pricing model. Deployable by a non-technical person by double-clicking one file.</p></div>
+          <div><h4>Result</h4><p>Complete product: brochure, narrated demo video, tiered pricing by school level, and a reseller tool that issues license codes and tracks sales, commissions and owner cash flow. Deployable by a non-technical person by double-clicking one file.</p></div>
         </div>
         <div class="shots"><a href="img/spp-04.jpg" data-cap="Dashboard: receipts, arrears, payment compliance"><img src="img/spp-04.jpg" alt="Dashboard: receipts, arrears, payment compliance" loading="lazy"></a><a href="img/spp-06.jpg" data-cap="Receive payment: several months in one receipt"><img src="img/spp-06.jpg" alt="Receive payment: several months in one receipt" loading="lazy"></a><a href="img/spp-08.jpg" data-cap="Arrears list, always current"><img src="img/spp-08.jpg" alt="Arrears list, always current" loading="lazy"></a><a href="img/spp-11.jpg" data-cap="Receipt history with audit trail"><img src="img/spp-11.jpg" alt="Receipt history with audit trail" loading="lazy"></a><a href="img/spp-19.jpg" data-cap="Attendance module"><img src="img/spp-19.jpg" alt="Attendance module" loading="lazy"></a></div>
+        <div class="numbers demo"><a href="video/school-fee-demo.mp4">▶ Watch the 3-minute demo video</a><span>Indonesian narration · demo data</span></div>
       </article>
 
       <article class="project">
-        <header><h3>Neighbourhood Dues — RT/RW fee collection over WhatsApp</h3><span class="status">v0.3.1 · piloting</span></header>
+        <header><h3>Boarding House Manager — rent billing and WhatsApp reminders for kost owners</h3><span class="status">v1.1.0 · licensed, field sales</span></header>
+        <div class="tags"><span class="tag">Go</span><span class="tag">Standard library only</span><span class="tag">Vanilla JS</span><span class="tag">Ed25519 licensing</span><span class="tag">Single .exe</span></div>
+        <div class="cols">
+          <div><h4>Problem</h4><p>Owners of Indonesian boarding houses (kost) track rooms, tenants and monthly rent in notebooks and WhatsApp chats. Every tenant has a different move-in date, so due dates are scattered and late payments slip through.</p></div>
+          <div><h4>What I built</h4><ul><li>Room map by floor, check-in with printed rental agreement, check-out with deposit settlement</li><li>Rent invoices issued automatically from each tenant's move-in date (monthly to yearly), with Wi-Fi, parking and late fees</li><li>Due-date reminder page: filter "due in exactly N days" or "within N days", then send one by one from the owner's own WhatsApp; the app records who was reminded</li><li>Add-on modules (cash book, electricity &amp; water meters, bookings, maintenance tickets) unlocked by signed license codes</li></ul></div>
+          <div><h4>Result</h4><p>Owner and caretaker work at the same time from a PC and phones on the kost Wi-Fi, without internet. Shipped with pricing by room count, brochure, narrated demo video and a sales commission scheme.</p></div>
+        </div>
+        <div class="shots"><a href="img/kost-dashboard.jpg" data-cap="Dashboard: occupancy, income, arrears, rent due in 7 days"><img src="img/kost-dashboard.jpg" alt="Dashboard: occupancy, income, arrears, rent due in 7 days" loading="lazy"></a><a href="img/kost-rooms.jpg" data-cap="Room map by floor: occupied, vacant, booked, under repair, in arrears"><img src="img/kost-rooms.jpg" alt="Room map by floor" loading="lazy"></a><a href="img/kost-reminders.jpg" data-cap="Due-date reminders: tenants due in 7 days, reminded ones marked"><img src="img/kost-reminders.jpg" alt="Due-date reminders" loading="lazy"></a><a href="img/kost-receipt.jpg" data-cap="Numbered receipt with amount in words, print or send via WhatsApp"><img src="img/kost-receipt.jpg" alt="Numbered receipt" loading="lazy"></a></div>
+        <div class="numbers demo"><a href="video/kost-demo.mp4">▶ Watch the 3-minute demo video</a><span>Indonesian narration · demo data</span></div>
+      </article>
+
+      <article class="project">
+        <header><h3>Neighbourhood Dues — RT/RW fee collection over WhatsApp</h3><span class="status">v0.3.3 · piloting</span></header>
         <div class="tags"><span class="tag">Go</span><span class="tag">Multi-tenant</span><span class="tag">Chrome extension</span><span class="tag">Mobile-first</span></div>
         <div class="cols">
           <div><h4>Problem</h4><p>Neighbourhood treasurers chase monthly dues house by house. Residents have no way to check their status without asking.</p></div>
