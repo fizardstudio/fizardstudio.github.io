@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aplikasi SPP Sekolah — kuitansi, tunggakan, tagih WA</title>
+<meta name="description" content="Aplikasi SPP untuk sekolah swasta dan yayasan: catat pembayaran, cetak kuitansi, lihat tunggakan, tagih orang tua lewat WhatsApp. Tanpa internet. Mulai Rp1 juta.">
+<meta property="og:title" content="Aplikasi SPP Sekolah — kuitansi, tunggakan, tagih WA"><meta property="og:description" content="Aplikasi SPP untuk sekolah swasta dan yayasan: catat pembayaran, cetak kuitansi, lihat tunggakan, tagih orang tua lewat WhatsApp. Tanpa internet. Mulai Rp1 juta.">
+<meta property="og:image" content="https://fizardstudio.github.io/spp/img/dashboard.jpg"><meta property="og:type" content="website">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2433;--muted:#5b6475;--line:#e3e1da;--brand:#1f6f5c;--brand-ink:#fff;--accent:#e9f3ef;--wa:#1f9e55;--warn:#a5521b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13161c;--card:#1b1f27;--ink:#e8eaee;--muted:#a3abba;--line:#2b313c;--brand:#4fb394;--brand-ink:#0d1a15;--accent:#1c2a25;--wa:#2fbf6c;--warn:#e39a62}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand)}img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.hero{padding:40px 0 28px}
+.eyebrow{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--brand);font-weight:700}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:8px 0 14px}
+h2{font-size:clamp(24px,4.5vw,32px);line-height:1.2;margin:0 0 14px}
+h3{font-size:19px;margin:0 0 6px}
+.lede{font-size:clamp(17px,2.6vw,20px);color:var(--muted);max-width:44em;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.wa{background:var(--wa);color:#fff}.btn.ghost{border:2px solid var(--line);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{background:var(--accent);border-radius:999px;padding:5px 12px;font-size:14px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.hero-shot{margin-top:28px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card p{margin:0;color:var(--muted)}
+.pain li{margin:0 0 8px}
+ul.check{list-style:none;padding:0;margin:0;columns:2 260px;column-gap:28px}
+ul.check li{padding-left:28px;position:relative;margin:0 0 8px;break-inside:avoid}
+ul.check li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.shots{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shots figcaption{padding:10px 14px;font-size:15px;color:var(--muted)}
+.shots.phones{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.phone{display:grid;gap:20px;grid-template-columns:minmax(0,220px) 1fr;align-items:center}
+@media (max-width:620px){.phone{grid-template-columns:1fr}.phone img{max-width:220px;margin:0 auto}}
+video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:16px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--accent);font-size:14px}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:15px;color:var(--muted);margin:12px 0 0}
+.example{background:var(--accent);border-radius:12px;padding:16px 18px;margin-top:16px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 60px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:800;display:grid;place-items:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+.cta{background:var(--brand);color:var(--brand-ink);border-radius:18px;padding:28px 22px;text-align:center}
+.cta p{opacity:.9}.cta .btn.wa{background:#fff;color:#14593f}
+footer{padding:28px 0 90px;color:var(--muted);font-size:15px}
+.float{position:fixed;right:16px;bottom:16px;z-index:9;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+</style></head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <span class="eyebrow">Aplikasi SPP Sekolah · untuk TK sampai SMA/SMK swasta</span>
+  <h1>Bayar SPP tercatat, kuitansi langsung jadi, tunggakan kelihatan.</h1>
+  <p class="lede">Untuk TU dan bendahara sekolah swasta. Berjalan di laptop sekolah tanpa internet, dibuka dari HP petugas lewat Wi-Fi sekolah. Tanpa biaya langganan cloud bulanan.</p>
+  <div class="btns"><a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20dengan%20Aplikasi%20SPP%20Sekolah.%20Nama%20sekolah%3A%20...%20Jenjang%3A%20...%20Jumlah%20siswa%3A%20...%20Mohon%20info%20demo.">💬 Minta demo gratis</a><a class="btn ghost" href="#video">▶ Tonton video 3 menit</a></div>
+  <ul class="chips"><li>TK · PAUD · RA</li><li>SD · MI</li><li>SMP · MTs</li><li>SMA · SMK · MA</li><li>Yayasan</li></ul>
+  <div class="hero-shot"><img src="img/dashboard.jpg" alt="Dasbor Aplikasi SPP: penerimaan, tunggakan, kepatuhan bayar"></div>
+</header>
+
+<section><h2>Kalau ini terdengar akrab, aplikasi ini untuk Anda</h2><ul class="pain"><li>SPP dicatat di buku atau Excel, dan setiap akhir bulan harus menghitung ulang siapa yang belum bayar.</li><li>Kuitansi ditulis tangan, nomornya bisa dobel atau terlewat.</li><li>Orang tua bertanya &quot;anak saya kurang bulan apa?&quot; dan jawabannya harus dicari dulu.</li><li>Menagih tunggakan satu per satu lewat WhatsApp memakan waktu berjam-jam.</li><li>Laporan untuk kepala sekolah atau yayasan baru jadi setelah lembur.</li></ul></section>
+
+<section><h2>Yang sudah ada di modul dasar</h2><ul class="check"><li>Data siswa &amp; kelas, impor dari Excel</li><li>Tarif SPP &amp; biaya lain per kelas</li><li>Potongan / beasiswa per siswa</li><li>Catat pembayaran &amp; cetak kuitansi bernomor dengan terbilang</li><li>Daftar tunggakan per siswa</li><li>Tagih orang tua lewat WhatsApp, pesan terisi otomatis</li><li>Laporan harian, bulanan, per kelas</li><li>Banyak petugas, setiap transaksi tercatat siapa yang input</li><li>Naik kelas &amp; tutup tahun sekali klik</li><li>Backup otomatis setiap hari</li></ul></section>
+
+<section><h2>Tampilannya</h2><div class="shots "><figure><a href='img/bayar.jpg'><img src='img/bayar.jpg' alt='Terima pembayaran: beberapa bulan sekaligus dalam satu kuitansi' loading='lazy'></a><figcaption>Terima pembayaran: beberapa bulan sekaligus dalam satu kuitansi</figcaption></figure><figure><a href='img/kuitansi.jpg'><img src='img/kuitansi.jpg' alt='Kuitansi bernomor dengan logo sekolah dan terbilang' loading='lazy'></a><figcaption>Kuitansi bernomor dengan logo sekolah dan terbilang</figcaption></figure><figure><a href='img/rekap.jpg'><img src='img/rekap.jpg' alt='Rekap penerimaan per bulan dan per kelas' loading='lazy'></a><figcaption>Rekap penerimaan per bulan dan per kelas</figcaption></figure></div>
+<div class="phone" style="margin-top:22px"><img src="img/hp.jpg" alt="Tampilan di HP" loading="lazy" style="border-radius:18px;border:1px solid var(--line)">
+<div><h3>Bisa dibuka dari HP</h3><p class="note" style="font-size:17px">Petugas loket, bendahara, atau kepala sekolah bisa membuka aplikasi dari HP masing-masing selama terhubung ke Wi-Fi sekolah. Data tetap tersimpan di satu laptop pusat.</p></div></div></section>
+
+<section id="video"><h2>Video demo 3 menit</h2><video controls preload="none" poster="../video/school-fee-demo.jpg"><source src="../video/school-fee-demo.mp4" type="video/mp4"></video><p class="note">Narasi bahasa Indonesia, memakai data contoh.</p></section>
+
+<section><h2>Kenapa aplikasi ini</h2><div class="grid"><div class='card'><h3>Tanpa internet</h3><p>Data tidak dikirim ke mana-mana. Tetap jalan saat internet sekolah mati.</p></div><div class='card'><h3>Sekali pasang, tanpa server</h3><p>Satu file aplikasi di laptop TU. Tidak perlu beli server atau hosting.</p></div><div class='card'><h3>Bukan pengganti MYOB</h3><p>Pembukuan yayasan tetap di MYOB. Aplikasi ini mengurus SPP harian; rekap bulanan tinggal diunduh ke Excel.</p></div><div class='card'><h3>Didampingi</h3><p>Dipasang, dilatih, lalu didampingi 14 hari pertama. Bantuan berikutnya lewat WhatsApp.</p></div></div></section>
+
+<section id="harga"><h2>Harga</h2>
+<p class="lede" style="margin-bottom:16px">Harga per sekolah, sesuai jenjang dan jumlah siswa aktif saat pemasangan.</p><div class="table-wrap"><table><thead><tr><th>Jenjang</th><th>Jumlah siswa</th><th class="num">Pasang + tahun pertama</th><th class="num">Per tahun, mulai tahun ke-2</th><th class="num">Selamanya (semua modul)</th></tr></thead><tbody><tr><td><b>TK</b><br><span class='note'>PAUD · RA · KB</span></td><td>sampai 100</td><td class='num'>Rp1.000.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp2.500.000</td></tr><tr><td><b>TK</b><br><span class='note'>PAUD · RA · KB</span></td><td>lebih dari 100</td><td class='num'>Rp1.250.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp3.000.000</td></tr><tr><td><b>SD</b><br><span class='note'>MI</span></td><td>sampai 200</td><td class='num'>Rp1.500.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp4.500.000</td></tr><tr><td><b>SD</b><br><span class='note'>MI</span></td><td>lebih dari 200</td><td class='num'>Rp1.750.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp5.000.000</td></tr><tr><td><b>SMP</b><br><span class='note'>MTs</span></td><td>sampai 300</td><td class='num'>Rp1.750.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp5.000.000</td></tr><tr><td><b>SMP</b><br><span class='note'>MTs</span></td><td>lebih dari 300</td><td class='num'>Rp2.000.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp5.500.000</td></tr><tr><td><b>SMA</b><br><span class='note'>SMK · MA</span></td><td>sampai 300</td><td class='num'>Rp2.000.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp5.500.000</td></tr><tr><td><b>SMA</b><br><span class='note'>SMK · MA</span></td><td>lebih dari 300</td><td class='num'>Rp2.500.000</td><td class='num'>Rp1.000.000</td><td class='num'>Rp6.000.000</td></tr></tbody></table></div>
+<p class="note">Perpanjangan tahunan sudah termasuk bantuan lewat WhatsApp, versi baru, pindah komputer, dan pemulihan data. Paket selamanya tanpa biaya tahunan; pemeliharaan opsional Rp500.000/tahun.</p>
+<h3 style="margin-top:26px">Modul tambahan · sekali beli</h3>
+<div class="table-wrap"><table style="min-width:0"><tbody><tr><td><b>Kas &amp; Pengeluaran</b><br><span class='note'>buku kas, pengeluaran, dana BOS</span></td><td class='num'>TK Rp200.000 · SD–SMA Rp300.000</td></tr><tr><td><b>Tabungan Siswa</b><br><span class='note'>setor, tarik, saldo per siswa</span></td><td class='num'>TK Rp200.000 · SD–SMA Rp300.000</td></tr><tr><td><b>Absensi Siswa &amp; Guru</b><br><span class='note'>harian, rekap bulanan</span></td><td class='num'>TK Rp200.000 · SD–SMA Rp300.000</td></tr><tr><td><b>Penerimaan Siswa Baru</b><br><span class='note'>pendaftar, biaya daftar, jadi siswa</span></td><td class='num'>TK Rp200.000 · SD–SMA Rp300.000</td></tr><tr><td><b>Paket 4 modul</b><br><span class='note'>hemat 25%</span></td><td class='num'>TK Rp600.000 · SD–SMA Rp900.000</td></tr></tbody></table></div>
+<div class="example"><b>Contoh: SD dengan 180 siswa</b><br>Pasang + paket 4 modul: Rp1,5 juta + Rp900 ribu = <b>Rp2.400.000</b> tahun pertama, lalu Rp1.000.000/tahun.<br>Atau <b>Rp4.500.000 sekali</b> untuk selamanya dengan semua modul.</div>
+<p class="note">Yayasan: diskon 30% untuk unit kedua dan seterusnya (misalnya TK + SD + SMP satu yayasan). Paket selamanya bisa dicicil 2–3 kali.</p></section>
+
+<section><h2>Cara membeli</h2><ol class="steps"><li><h3>Demo gratis</h3><p class='note' style='margin:0'>Lewat video call, atau datang ke sekolah untuk area Bandung. Coba sendiri dengan data contoh.</p></li><li><h3>Pemasangan</h3><p class='note' style='margin:0'>Dipasang di laptop sekolah, langsung di tempat atau jarak jauh lewat AnyDesk. Data siswa diimpor dari Excel sekolah.</p></li><li><h3>Pelatihan</h3><p class='note' style='margin:0'>Petugas dilatih sampai bisa: terima bayar, cetak kuitansi, cek tunggakan, tagih lewat WA.</p></li><li><h3>Didampingi 14 hari</h3><p class='note' style='margin:0'>Ada kendala di dua minggu pertama, kami bantu sampai beres.</p></li></ol></section>
+
+<section><h2>Pertanyaan yang sering muncul</h2><details><summary>Perlu internet?</summary><p>Tidak. Aplikasi berjalan di laptop sekolah. Internet hanya dipakai saat petugas mengirim pesan tagihan lewat WhatsApp.</p></details><details><summary>Datanya disimpan di mana?</summary><p>Di laptop sekolah sendiri, tidak dikirim ke server mana pun. Aplikasi membuat backup otomatis; kami sarankan juga menyalin backup ke flashdisk seminggu sekali.</p></details><details><summary>Bisa dipakai beberapa petugas sekaligus?</summary><p>Bisa. Petugas lain membuka aplikasi dari komputer atau HP yang terhubung ke Wi-Fi sekolah yang sama, dengan akun masing-masing.</p></details><details><summary>Sekolah kami sudah pakai MYOB.</summary><p>MYOB tetap dipakai untuk pembukuan yayasan. Aplikasi SPP mengurus pembayaran siswa harian, dan rekap bulanannya bisa diunduh ke Excel untuk dimasukkan ke MYOB sebagai satu jurnal.</p></details><details><summary>Kalau laptopnya rusak?</summary><p>Selama ada backup, data dipulihkan di laptop baru. Pindah laptop sudah termasuk perpanjangan tahunan.</p></details><details><summary>Kalau lisensi tahunan tidak diperpanjang?</summary><p>Ada masa tenggang 14 hari. Setelah itu input baru terkunci, tapi data lama tetap aman dan bisa dilihat.</p></details><details><summary>Bisa di luar Bandung?</summary><p>Bisa. Demo lewat video call, pemasangan dan pelatihan jarak jauh.</p></details></section>
+
+<section><div class="cta"><h2>Coba dulu, baru putuskan</h2><p>Kirim pesan, kami jadwalkan demo lewat video call atau datang langsung (area Bandung). Gratis, tanpa kewajiban membeli.</p><a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20dengan%20Aplikasi%20SPP%20Sekolah.%20Nama%20sekolah%3A%20...%20Jenjang%3A%20...%20Jumlah%20siswa%3A%20...%20Mohon%20info%20demo.">💬 Minta demo lewat WhatsApp</a></div></section>
+
+<footer>Aplikasi SPP Sekolah · dibuat oleh <a href="../">Fizard Studio</a> · Bandung · Harga berlaku mulai Oktober 2026.</footer>
+</div>
+<a class="btn wa float" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20dengan%20Aplikasi%20SPP%20Sekolah.%20Nama%20sekolah%3A%20...%20Jenjang%3A%20...%20Jumlah%20siswa%3A%20...%20Mohon%20info%20demo." aria-label="Tanya lewat WhatsApp">💬 Tanya</a>
+</body></html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aplikasi Iuran Warga RT/RW — catat bayar, tagih lewat WA</title>
+<meta name="description" content="Aplikasi iuran RT/RW untuk bendahara: catat bayar, daftar belum bayar, tagih dan umumkan lewat WhatsApp sendiri, laporan kas untuk warga. Tanpa internet. Mulai Rp500 ribu/tahun.">
+<meta property="og:title" content="Aplikasi Iuran Warga RT/RW — catat bayar, tagih lewat WA"><meta property="og:description" content="Aplikasi iuran RT/RW untuk bendahara: catat bayar, daftar belum bayar, tagih dan umumkan lewat WhatsApp sendiri, laporan kas untuk warga. Tanpa internet. Mulai Rp500 ribu/tahun.">
+<meta property="og:image" content="https://fizardstudio.github.io/iuran/img/dashboard.jpg"><meta property="og:type" content="website">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2433;--muted:#5b6475;--line:#e3e1da;--brand:#1f6f5c;--brand-ink:#fff;--accent:#e9f3ef;--wa:#1f9e55;--warn:#a5521b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13161c;--card:#1b1f27;--ink:#e8eaee;--muted:#a3abba;--line:#2b313c;--brand:#4fb394;--brand-ink:#0d1a15;--accent:#1c2a25;--wa:#2fbf6c;--warn:#e39a62}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand)}img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.hero{padding:40px 0 28px}
+.eyebrow{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--brand);font-weight:700}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:8px 0 14px}
+h2{font-size:clamp(24px,4.5vw,32px);line-height:1.2;margin:0 0 14px}
+h3{font-size:19px;margin:0 0 6px}
+.lede{font-size:clamp(17px,2.6vw,20px);color:var(--muted);max-width:44em;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.wa{background:var(--wa);color:#fff}.btn.ghost{border:2px solid var(--line);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{background:var(--accent);border-radius:999px;padding:5px 12px;font-size:14px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.hero-shot{margin-top:28px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card p{margin:0;color:var(--muted)}
+.pain li{margin:0 0 8px}
+ul.check{list-style:none;padding:0;margin:0;columns:2 260px;column-gap:28px}
+ul.check li{padding-left:28px;position:relative;margin:0 0 8px;break-inside:avoid}
+ul.check li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.shots{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shots figcaption{padding:10px 14px;font-size:15px;color:var(--muted)}
+.shots.phones{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.phone{display:grid;gap:20px;grid-template-columns:minmax(0,220px) 1fr;align-items:center}
+@media (max-width:620px){.phone{grid-template-columns:1fr}.phone img{max-width:220px;margin:0 auto}}
+video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:16px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--accent);font-size:14px}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:15px;color:var(--muted);margin:12px 0 0}
+.example{background:var(--accent);border-radius:12px;padding:16px 18px;margin-top:16px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 60px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:800;display:grid;place-items:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+.cta{background:var(--brand);color:var(--brand-ink);border-radius:18px;padding:28px 22px;text-align:center}
+.cta p{opacity:.9}.cta .btn.wa{background:#fff;color:#14593f}
+footer{padding:28px 0 90px;color:var(--muted);font-size:15px}
+.float{position:fixed;right:16px;bottom:16px;z-index:9;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+</style></head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <span class="eyebrow">Aplikasi Iuran Warga · untuk bendahara RT/RW</span>
+  <h1>Iuran warga tercatat rapi, tagihan terkirim dari WhatsApp Anda sendiri.</h1>
+  <p class="lede">Untuk bendahara RT/RW dan pengurus warga. Berjalan di laptop bendahara tanpa internet, dibuka dari HP lewat Wi-Fi rumah. Tanpa server, tanpa biaya pesan WhatsApp.</p>
+  <div class="btns"><a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20dengan%20Aplikasi%20Iuran%20Warga.%20RT/RW%3A%20...%20Kelurahan/kota%3A%20...%20Jumlah%20rumah%3A%20...%20Mohon%20info%20demo.">💬 Minta demo gratis</a><a class="btn ghost" href="#harga">Lihat harga</a></div>
+  <ul class="chips"><li>RT · sampai 200 rumah</li><li>RW · beberapa RT</li><li>Perumahan &amp; kompleks</li><li>Paguyuban warga</li></ul>
+  <div class="hero-shot"><img src="img/dashboard.jpg" alt="Tampilan Aplikasi Iuran Warga di HP: beranda, belum bayar, pengumuman grup"></div>
+</header>
+
+<section><h2>Kalau ini terdengar akrab, aplikasi ini untuk Anda</h2><ul class="pain"><li>Iuran dicatat di buku atau Excel, dan menghitung siapa yang belum bayar butuh waktu.</li><li>Menagih rumah satu per satu lewat WhatsApp, mengetik pesan yang sama berulang-ulang.</li><li>Warga menanyakan &quot;uang kas dipakai untuk apa?&quot; dan laporannya belum siap.</li><li>Iuran kegiatan (17 Agustus, perbaikan jalan) tercampur dengan iuran bulanan.</li><li>Saat bendahara berganti, catatan lama sulit diserahterimakan.</li></ul></section>
+
+<section><h2>Yang sudah ada di modul dasar</h2><ul class="check"><li>Data rumah per RT, impor dari Excel</li><li>Iuran bulanan, bisa tarif khusus atau dibebaskan per rumah</li><li>Iuran sekali / kegiatan dengan target dana dan batas tanggal</li><li>Iuran sukarela, tercatat per rumah tanpa jadi tunggakan</li><li>Catat bayar: ketik nomor rumah, tunggakan sudah tercentang</li><li>Bukti bayar bisa dikirim ke WA warga</li><li>Umumkan ke grup WA: pesan + gambar rekap hijau/merah per rumah</li><li>Tagih yang belum bayar satu per satu dari HP, tanpa mengetik ulang</li><li>Buku kas &amp; laporan kas untuk warga</li><li>Akun bendahara &amp; pengurus, setiap catatan tercatat siapa yang input</li><li>Backup otomatis setiap hari, bisa ke Google Drive</li></ul></section>
+
+<section><h2>Tampilannya</h2><div class="shots phones"><figure><a href='img/beranda.jpg'><img src='img/beranda.jpg' alt='Beranda: yang sudah bayar bulan ini dan kas masuk' loading='lazy'></a><figcaption>Beranda: yang sudah bayar bulan ini dan kas masuk</figcaption></figure><figure><a href='img/belum-bayar.jpg'><img src='img/belum-bayar.jpg' alt='Belum bayar, dikelompokkan per lama tunggakan' loading='lazy'></a><figcaption>Belum bayar, dikelompokkan per lama tunggakan</figcaption></figure><figure><a href='img/tagih-beruntun.jpg'><img src='img/tagih-beruntun.jpg' alt='Tagih lewat WA satu per satu' loading='lazy'></a><figcaption>Tagih lewat WA satu per satu</figcaption></figure><figure><a href='img/umumkan-wa.jpg'><img src='img/umumkan-wa.jpg' alt='Pengumuman grup dengan gambar rekap hijau/merah' loading='lazy'></a><figcaption>Pengumuman grup dengan gambar rekap hijau/merah</figcaption></figure><figure><a href='img/kas.jpg'><img src='img/kas.jpg' alt='Buku kas dan laporan untuk warga' loading='lazy'></a><figcaption>Buku kas dan laporan untuk warga</figcaption></figure></div>
+<div class="phone" style="margin-top:22px"><img src="img/hp.jpg" alt="Tampilan di HP" loading="lazy" style="border-radius:18px;border:1px solid var(--line)">
+<div><h3>Bisa dibuka dari HP</h3><p class="note" style="font-size:17px">Dibuat untuk HP. Bendahara dan pengurus bisa mencatat dari HP masing-masing selama laptop bendahara menyala dan terhubung ke Wi-Fi yang sama.</p></div></div></section>
+
+
+
+<section><h2>Kenapa aplikasi ini</h2><div class="grid"><div class='card'><h3>Tanpa biaya pesan</h3><p>Tagihan dan pengumuman dikirim dari WhatsApp bendahara sendiri, bukan layanan berbayar.</p></div><div class='card'><h3>Tanpa internet</h3><p>Data warga tersimpan di laptop bendahara, tidak dikirim ke server mana pun.</p></div><div class='card'><h3>Transparan ke warga</h3><p>Gambar rekap per rumah dan laporan kas tinggal dikirim ke grup WA.</p></div><div class='card'><h3>Mudah diserahterimakan</h3><p>Semua catatan ada di satu folder. Saat bendahara berganti, tinggal pindahkan.</p></div></div></section>
+
+<section id="harga"><h2>Harga</h2><p class="lede" style="margin-bottom:16px">Harga per RT atau RW, terikat nama RT/RW di aplikasi.</p>
+<div class="table-wrap"><table><thead><tr><th>Paket</th><th>Cakupan</th><th class="num">Per tahun</th><th class="num">Selamanya</th></tr></thead><tbody>
+<tr><td><b>RT</b></td><td>satu RT, sampai 200 rumah</td><td class="num">Rp500.000</td><td class="num">Rp1.250.000</td></tr>
+<tr><td><b>RW</b></td><td>beberapa RT dalam satu RW</td><td class="num">Rp1.000.000</td><td class="num">Rp2.500.000</td></tr>
+</tbody></table></div>
+<div class="example"><b>Contoh: RT dengan 80 rumah dan iuran Rp20.000/bulan</b><br>Paket RT Rp500.000 per tahun, sekitar Rp42.000 per bulan, kurang dari tiga rumah yang lupa bayar.</div>
+<p class="note">Sudah termasuk pemasangan dan pelatihan, langsung (area Bandung) atau jarak jauh. Kas RT/RW bisa membayar bersama, cukup satu lisensi per RT atau RW.</p></section>
+
+<section><h2>Cara membeli</h2><ol class="steps"><li><h3>Demo gratis</h3><p class='note' style='margin:0'>Lewat video call, atau datang langsung untuk area Bandung. Coba sendiri dengan data contoh 100 rumah.</p></li><li><h3>Pemasangan</h3><p class='note' style='margin:0'>Dipasang di laptop bendahara, langsung atau jarak jauh lewat AnyDesk. Data rumah diimpor dari Excel.</p></li><li><h3>Pelatihan</h3><p class='note' style='margin:0'>Bendahara dilatih sampai bisa: catat bayar, umumkan ke grup, tagih, laporan kas.</p></li><li><h3>Dipakai tiap bulan</h3><p class='note' style='margin:0'>Tanggal 1 umumkan, catat setiap ada yang bayar, tanggal 15 tagih, akhir bulan laporan kas.</p></li></ol></section>
+
+<section><h2>Pertanyaan yang sering muncul</h2><details><summary>Perlu internet?</summary><p>Tidak untuk mencatat. Internet hanya dipakai saat mengirim pesan WhatsApp, dari HP atau laptop bendahara seperti biasa.</p></details><details><summary>Apakah pakai WhatsApp berbayar?</summary><p>Tidak. Pesan dikirim dari WhatsApp bendahara sendiri. Aplikasi menyiapkan pesannya, bendahara tinggal menekan kirim.</p></details><details><summary>Datanya disimpan di mana?</summary><p>Di laptop bendahara, tidak dikirim ke server mana pun. Salinan dibuat otomatis setiap hari, dan bisa diarahkan ke folder Google Drive.</p></details><details><summary>Bisa dibuka dari HP?</summary><p>Bisa, selama laptop bendahara menyala dan HP terhubung ke Wi-Fi yang sama.</p></details><details><summary>Kalau bendahara berganti?</summary><p>Folder data dipindahkan ke laptop bendahara baru, lalu bendahara baru dibuatkan akun. Catatan lama tetap utuh.</p></details><details><summary>Kalau lisensi tahunan habis?</summary><p>Data tetap bisa dilihat, dicetak, dan dicadangkan. Hanya pencatatan baru yang terkunci sampai diperpanjang.</p></details></section>
+
+<section><div class="cta"><h2>Coba dulu, baru putuskan</h2><p>Kirim pesan, kami jadwalkan demo lewat video call atau datang langsung (area Bandung). Gratis, tanpa kewajiban membeli.</p><a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20dengan%20Aplikasi%20Iuran%20Warga.%20RT/RW%3A%20...%20Kelurahan/kota%3A%20...%20Jumlah%20rumah%3A%20...%20Mohon%20info%20demo.">💬 Minta demo lewat WhatsApp</a></div></section>
+
+<footer>Aplikasi Iuran Warga · dibuat oleh <a href="../">Fizard Studio</a> · Bandung · Harga berlaku mulai Oktober 2026.</footer>
+</div>
+<a class="btn wa float" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20dengan%20Aplikasi%20Iuran%20Warga.%20RT/RW%3A%20...%20Kelurahan/kota%3A%20...%20Jumlah%20rumah%3A%20...%20Mohon%20info%20demo." aria-label="Tanya lewat WhatsApp">💬 Tanya</a>
+</body></html>
