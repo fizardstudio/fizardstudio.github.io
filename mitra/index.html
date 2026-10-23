@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mitra Tim Lapangan — Fizard Studio</title>
+<meta name="description" content="Jadi mitra tim lapangan: tawarkan Aplikasi SPP Sekolah dan Aplikasi Kost di daerah Anda. Komisi 30% per pelanggan baru, bonus target, dan Rp100.000 per tahun dari setiap perpanjangan.">
+<meta property="og:title" content="Mitra Tim Lapangan — Fizard Studio"><meta property="og:description" content="Komisi 30% per pelanggan baru, bonus target bulanan, dan penghasilan tahunan dari perpanjangan.">
+<meta property="og:image" content="https://fizardstudio.github.io/spp/img/dashboard.jpg"><meta property="og:type" content="website">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2433;--muted:#5b6475;--line:#e3e1da;--brand:#1f6f5c;--brand-ink:#fff;--accent:#e9f3ef;--wa:#1f9e55;--warn:#a5521b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13161c;--card:#1b1f27;--ink:#e8eaee;--muted:#a3abba;--line:#2b313c;--brand:#4fb394;--brand-ink:#0d1a15;--accent:#1c2a25;--wa:#2fbf6c;--warn:#e39a62}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand)}img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.hero{padding:40px 0 28px}
+.eyebrow{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--brand);font-weight:700}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:8px 0 14px}
+h2{font-size:clamp(24px,4.5vw,32px);line-height:1.2;margin:0 0 14px}
+h3{font-size:19px;margin:0 0 6px}
+.lede{font-size:clamp(17px,2.6vw,20px);color:var(--muted);max-width:44em;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.wa{background:var(--wa);color:#fff}.btn.ghost{border:2px solid var(--line);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{background:var(--accent);border-radius:999px;padding:5px 12px;font-size:14px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.hero-shot{margin-top:28px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card p{margin:0;color:var(--muted)}
+.pain li{margin:0 0 8px}
+ul.check{list-style:none;padding:0;margin:0;columns:2 260px;column-gap:28px}
+ul.check li{padding-left:28px;position:relative;margin:0 0 8px;break-inside:avoid}
+ul.check li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.shots{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shots figcaption{padding:10px 14px;font-size:15px;color:var(--muted)}
+.shots.phones{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.phone{display:grid;gap:20px;grid-template-columns:minmax(0,220px) 1fr;align-items:center}
+@media (max-width:620px){.phone{grid-template-columns:1fr}.phone img{max-width:220px;margin:0 auto}}
+video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:16px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--accent);font-size:14px}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:15px;color:var(--muted);margin:12px 0 0}
+.example{background:var(--accent);border-radius:12px;padding:16px 18px;margin-top:16px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 60px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:800;display:grid;place-items:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+.cta{background:var(--brand);color:var(--brand-ink);border-radius:18px;padding:28px 22px;text-align:center}
+.cta p{opacity:.9}.cta .btn.wa{background:#fff;color:#14593f}
+footer{padding:28px 0 90px;color:var(--muted);font-size:15px}
+.float{position:fixed;right:16px;bottom:16px;z-index:9;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+
+.big{font-size:clamp(34px,7vw,52px);font-weight:800;color:var(--brand);line-height:1}
+.kpis{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:24px}
+.kpis .card b{display:block;font-size:26px;color:var(--brand);line-height:1.2}
+.disclaimer{font-size:14px;color:var(--muted);border-left:3px solid var(--warn);padding:8px 12px;margin-top:16px}
+</style></head><body><div class="wrap">
+
+<header class="hero">
+  <span class="eyebrow">Mitra Tim Lapangan · Fizard Studio</span>
+  <h1>Tawarkan aplikasi ke sekolah dan kost di daerah Anda. Dapat komisi setiap ada yang membeli.</h1>
+  <p class="lede">Anda yang mencari calon pelanggan, memperagakan demo, dan menutup penjualan. Kami yang menyediakan aplikasinya, materi jualan, lisensi, dan dukungan teknis setelah terpasang.</p>
+  <div class="btns"><a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20menjadi%20Mitra%20Tim%20Lapangan%20Fizard%20Studio.%0ANama%3A%20...%0AKota/kecamatan%3A%20...%0ALatar%20belakang%20%28guru/operator%20sekolah/pemilik%20kost/sales/lainnya%29%3A%20...%0AProduk%20yang%20ingin%20dijual%20%28SPP/Kost/keduanya%29%3A%20...">💬 Daftar jadi mitra</a><a class="btn ghost" href="#komisi">Lihat komisi</a></div>
+  <div class="kpis">
+    <div class="card"><b>30%</b><p>dari harga pasang + tahun pertama, untuk setiap pelanggan baru</p></div>
+    <div class="card"><b>Rp1,5 juta</b><p>bonus bila 10 pelanggan baru dalam sebulan (Rp500 ribu untuk 5)</p></div>
+    <div class="card"><b>Rp100 ribu / tahun</b><p>dari setiap pelanggan Anda yang memperpanjang, selama mereka memakai</p></div>
+  </div>
+</header>
+
+<section><h2>Yang Anda jual</h2><div class="grid">
+  <div class="card"><h3>Aplikasi SPP Sekolah</h3><p>Untuk TK sampai SMA/SMK swasta: catat bayar SPP, kuitansi, tunggakan, tagih orang tua lewat WhatsApp. Mulai Rp1 juta.</p><p style="margin-top:10px"><a href="../spp/">Lihat halaman produk →</a></p></div>
+  <div class="card"><h3>Aplikasi Manajemen Kost</h3><p>Untuk pemilik kost: peta kamar, tagihan sewa otomatis, kuitansi, tagih penghuni lewat WhatsApp. Mulai Rp1 juta.</p><p style="margin-top:10px"><a href="../kost/">Lihat halaman produk →</a></p></div>
+</div>
+<p class="note">Keduanya berjalan tanpa internet di komputer pelanggan, jadi mudah diterima sekolah dan kost yang tidak mau berlangganan aplikasi online.</p></section>
+
+<section><h2>Cocok untuk Anda yang</h2><ul class="check">
+<li>Operator sekolah, staf TU, atau guru yang kenal banyak sekolah</li><li>Pengawas, pengurus forum atau yayasan pendidikan</li>
+<li>Pemilik atau penjaga kost yang kenal pemilik kost lain</li><li>Sales lepas yang biasa menawarkan produk ke kantor atau usaha</li>
+<li>Mahasiswa atau siapa pun yang mau bekerja paruh waktu</li><li>Terbiasa memakai laptop atau HP untuk memperagakan aplikasi</li>
+</ul></section>
+
+<section id="komisi"><h2>Besar komisi</h2>
+<div class="grid">
+  <div class="card"><h3>Pelanggan baru</h3><p><b>30%</b> dari harga pasang + tahun pertama. Contoh SD kecil Rp1.500.000 → komisi <b>Rp450.000</b>.</p></div>
+  <div class="card"><h3>Paket selamanya</h3><p><b>20%</b> dari harga paket. Contoh SD kecil Rp4.500.000 → komisi <b>Rp900.000</b>.</p></div>
+  <div class="card"><h3>Modul tambahan</h3><p><b>20%</b> dari harga modul. Rp300.000 per modul → Rp60.000; paket 4 modul → Rp180.000.</p></div>
+  <div class="card"><h3>Bonus target</h3><p><b>Rp1,5 juta</b> untuk 10 pelanggan baru dalam sebulan, <b>Rp500 ribu</b> untuk 5. Sekolah dan kost dihitung gabungan.</p></div>
+  <div class="card"><h3>Perpanjangan</h3><p><b>Rp100.000</b> per pelanggan setiap tahun ia memperpanjang. 50 pelanggan aktif = Rp5 juta per tahun.</p></div>
+  <div class="card"><h3>Pasang & latih sendiri</h3><p>Tambahan <b>Rp100.000</b> per pelanggan bila Anda juga memasang aplikasi dan melatih petugasnya.</p></div>
+</div>
+
+<h3 style="margin-top:28px">Komisi Aplikasi SPP menurut jenjang</h3>
+<div class="table-wrap"><table><thead><tr><th>Jenjang</th><th>Jumlah siswa</th><th class=num>Pasang + tahun pertama</th><th class=num>Komisi 30%</th><th class=num>Paket selamanya</th><th class=num>Komisi 20%</th></tr></thead><tbody><tr><td><b>TK</b> · PAUD · RA</td><td>sampai 100</td><td class=num>Rp1.000.000</td><td class=num><b>Rp300.000</b></td><td class=num>Rp2.500.000</td><td class=num><b>Rp500.000</b></td></tr><tr><td><b>TK</b> · PAUD · RA</td><td>lebih dari 100</td><td class=num>Rp1.250.000</td><td class=num><b>Rp375.000</b></td><td class=num>Rp3.000.000</td><td class=num><b>Rp600.000</b></td></tr><tr><td><b>SD</b> · MI</td><td>sampai 200</td><td class=num>Rp1.500.000</td><td class=num><b>Rp450.000</b></td><td class=num>Rp4.500.000</td><td class=num><b>Rp900.000</b></td></tr><tr><td><b>SD</b> · MI</td><td>lebih dari 200</td><td class=num>Rp1.750.000</td><td class=num><b>Rp525.000</b></td><td class=num>Rp5.000.000</td><td class=num><b>Rp1.000.000</b></td></tr><tr><td><b>SMP</b> · MTs</td><td>sampai 300</td><td class=num>Rp1.750.000</td><td class=num><b>Rp525.000</b></td><td class=num>Rp5.000.000</td><td class=num><b>Rp1.000.000</b></td></tr><tr><td><b>SMP</b> · MTs</td><td>lebih dari 300</td><td class=num>Rp2.000.000</td><td class=num><b>Rp600.000</b></td><td class=num>Rp5.500.000</td><td class=num><b>Rp1.100.000</b></td></tr><tr><td><b>SMA</b> · SMK · MA</td><td>sampai 300</td><td class=num>Rp2.000.000</td><td class=num><b>Rp600.000</b></td><td class=num>Rp5.500.000</td><td class=num><b>Rp1.100.000</b></td></tr><tr><td><b>SMA</b> · SMK · MA</td><td>lebih dari 300</td><td class=num>Rp2.500.000</td><td class=num><b>Rp750.000</b></td><td class=num>Rp6.000.000</td><td class=num><b>Rp1.200.000</b></td></tr></tbody></table></div>
+<h3 style="margin-top:24px">Komisi Aplikasi Kost menurut jumlah kamar</h3>
+<div class="table-wrap"><table><thead><tr><th>Ukuran</th><th>Jumlah kamar</th><th class=num>Pasang + tahun pertama</th><th class=num>Komisi 30%</th><th class=num>Paket selamanya</th><th class=num>Komisi 20%</th></tr></thead><tbody><tr><td>Kecil</td><td>sampai 15 kamar</td><td class=num>Rp1.000.000</td><td class=num><b>Rp300.000</b></td><td class=num>Rp2.500.000</td><td class=num><b>Rp500.000</b></td></tr><tr><td>Sedang</td><td>16 – 40 kamar</td><td class=num>Rp1.500.000</td><td class=num><b>Rp450.000</b></td><td class=num>Rp4.000.000</td><td class=num><b>Rp800.000</b></td></tr><tr><td>Besar</td><td>41 – 100 kamar</td><td class=num>Rp2.500.000</td><td class=num><b>Rp750.000</b></td><td class=num>Rp6.000.000</td><td class=num><b>Rp1.200.000</b></td></tr><tr><td>Eksklusif</td><td>lebih dari 100</td><td class=num>mulai Rp3.500.000</td><td class=num><b>30%</b></td><td class=num>nego</td><td class=num><b>20%</b></td></tr></tbody></table></div>
+<p class="note">Pemilik dengan beberapa lokasi kost: tiap lokasi dihitung satu pelanggan, komisi dari harga setelah diskon.</p>
+
+<h3 style="margin-top:24px">Contoh penghasilan sebulan (semua SD kecil)</h3>
+<div class="table-wrap"><table style="min-width:440px"><thead><tr><th>Sekolah baru</th><th class=num>Komisi</th><th class=num>Bonus</th><th class=num>Total</th></tr></thead><tbody><tr><td>1 sekolah</td><td class=num>Rp450.000</td><td class=num>–</td><td class=num>Rp450.000</td></tr><tr><td>3 sekolah</td><td class=num>Rp1.350.000</td><td class=num>–</td><td class=num>Rp1.350.000</td></tr><tr><td>5 sekolah</td><td class=num>Rp2.250.000</td><td class=num>Rp500.000</td><td class=num>Rp2.750.000</td></tr><tr><td>8 sekolah</td><td class=num>Rp3.600.000</td><td class=num>Rp500.000</td><td class=num>Rp4.100.000</td></tr><tr><td>10 sekolah</td><td class=num>Rp4.500.000</td><td class=num>Rp1.500.000</td><td class=num>Rp6.000.000</td></tr></tbody></table></div>
+<div class="example"><b>Contoh campuran, 10 pelanggan baru sebulan:</b> 3 TK, 3 SD, 1 SMP (ukuran kecil) dan 3 kost 16–40 kamar, dua kost menambah paket 4 modul.<br>3 × Rp300.000 + 3 × Rp450.000 + 1 × Rp525.000 + 3 × Rp450.000 + bonus Rp1.500.000 + 2 × Rp180.000 = <b>Rp5.985.000</b></div>
+<p class="disclaimer">Angka di atas adalah ilustrasi perhitungan, bukan janji atau jaminan penghasilan. Komisi nyata bergantung pada jumlah pelanggan yang lunas dan tetap aktif. Besaran harga dan persentase dapat berubah sesuai ketentuan tertulis yang berlaku.</p>
+</section>
+
+<section><h2>Aturan main</h2><ul class="check">
+<li><b>70% komisi cair saat pelanggan lunas</b>, 30% sisanya setelah masa pendampingan 14 hari selesai.</li>
+<li>Jika pelanggan tidak melunasi atau batal memakai sebelum pendampingan selesai, bagian 30% hangus dan pelanggan itu tidak dihitung untuk bonus.</li>
+<li>Tidak ada masa coba gratis untuk pelanggan; yang gratis adalah <b>demo</b>. Pelanggan membayar saat pemasangan.</li>
+<li>Paket selamanya yang dicicil: komisi cair setelah lunas.</li>
+<li><b>Klaim pelanggan:</b> mitra yang pertama memperagakan demo dan melapor di grup tim memegang sekolah atau kost itu selama 30 hari.</li>
+<li>Komisi dihitung dari harga setelah diskon. Diskon hanya dengan izin pemilik.</li>
+<li>Komisi perpanjangan berlaku selama pelanggan tetap memperpanjang, dan berhenti bila pelanggan berhenti.</li>
+</ul></section>
+
+<section><h2>Cara bergabung</h2><ol class="steps">
+<li><h3>Daftar lewat WhatsApp</h3><p class="note" style="margin:0">Kirim nama, kota, dan latar belakang Anda.</p></li>
+<li><h3>Pengenalan produk</h3><p class="note" style="margin:0">Kami tunjukkan cara memperagakan demo dan menjawab pertanyaan yang sering muncul.</p></li>
+<li><h3>Terima materi</h3><p class="note" style="margin:0">Brosur, daftar harga, video demo, data contoh untuk demo, dan panduan menjawab "sekolah sudah pakai MYOB".</p></li>
+<li><h3>Mulai menawarkan</h3><p class="note" style="margin:0">Lapor setiap demo di grup tim. Lisensi dan dukungan teknis kami yang urus.</p></li>
+</ol></section>
+
+<section><div class="cta"><h2>Tertarik bergabung?</h2><p>Kirim pesan, kami jelaskan lebih lanjut dan jadwalkan pengenalan produk.</p><a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20menjadi%20Mitra%20Tim%20Lapangan%20Fizard%20Studio.%0ANama%3A%20...%0AKota/kecamatan%3A%20...%0ALatar%20belakang%20%28guru/operator%20sekolah/pemilik%20kost/sales/lainnya%29%3A%20...%0AProduk%20yang%20ingin%20dijual%20%28SPP/Kost/keduanya%29%3A%20...">💬 Daftar jadi mitra lewat WhatsApp</a></div></section>
+<footer>Mitra Tim Lapangan · <a href="../">Fizard Studio</a> · Bandung · Ketentuan berlaku mulai Oktober 2026.</footer>
+</div><a class="btn wa float" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20tertarik%20menjadi%20Mitra%20Tim%20Lapangan%20Fizard%20Studio.%0ANama%3A%20...%0AKota/kecamatan%3A%20...%0ALatar%20belakang%20%28guru/operator%20sekolah/pemilik%20kost/sales/lainnya%29%3A%20...%0AProduk%20yang%20ingin%20dijual%20%28SPP/Kost/keduanya%29%3A%20...">💬 Daftar</a></body></html>
