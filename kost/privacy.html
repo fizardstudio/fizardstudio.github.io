@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kebijakan Privasi — Aplikasi Manajemen Kost</title>
+<meta name="description" content="Kebijakan privasi Aplikasi Manajemen Kost: data disimpan di komputer pengguna, cadangan Google Drive opsional ke Drive milik pengguna sendiri.">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2433;--muted:#5b6475;--line:#e3e1da;--brand:#1f6f5c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13161c;--card:#1b1f27;--ink:#e8eaee;--muted:#a3abba;--line:#2b313c;--brand:#4fb394}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand)}.wrap{max-width:780px;margin:0 auto;padding:32px 16px 56px}
+h1{font-size:clamp(28px,5vw,36px);line-height:1.2;margin:10px 0 6px}h2{font-size:20px;margin:30px 0 6px}
+.mute{color:var(--muted);font-size:15px}code{font-size:15px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 5px;overflow-wrap:anywhere}
+li{margin-bottom:6px}hr{border:0;border-top:1px solid var(--line);margin:36px 0}footer{padding-top:24px;color:var(--muted);font-size:15px}
+</style>
+</head><body><div class="wrap">
+<p><a href="./">← Aplikasi Manajemen Kost</a></p>
+<h1>Kebijakan Privasi</h1>
+<p class="mute">Aplikasi: Aplikasi Manajemen Kost · Pengembang: Mochamad Firman (Fizard Studio), Bandung · Berlaku sejak 26 Oktober 2026</p>
+
+<h2>1. Ringkasan</h2>
+<p>Aplikasi Manajemen Kost adalah aplikasi yang dipasang dan dijalankan di komputer pengelola kost sendiri. Seluruh data kamar, penghuni, tagihan sewa, pembayaran, kas, meteran, booking, dan keluhan disimpan di komputer tersebut (folder <code>data</code> di samping aplikasi). Pengembang <b>tidak</b> mengoperasikan server untuk aplikasi ini dan <b>tidak</b> menerima, menyimpan, atau melihat data pengguna. Data tersebut milik pengelola kost yang memakai aplikasi.</p>
+
+<h2>2. Data yang diproses aplikasi</h2>
+<ul>
+  <li>Data yang diketik atau diimpor pengguna ke dalam aplikasi, termasuk nama dan nomor WhatsApp, tersimpan hanya di komputer pengguna.</li>
+  <li>Saat pengguna menekan tombol kirim WhatsApp, aplikasi membuka WhatsApp di perangkat pengguna dengan pesan yang sudah terisi. Pesan dikirim oleh pengguna sendiri melalui WhatsApp; pengembang tidak menerima salinannya.</li>
+  <li>Kode lisensi diperiksa di dalam aplikasi tanpa mengirim data ke pengembang.</li>
+</ul>
+
+<h2>3. Cadangan ke Google Drive (opsional)</h2>
+<p>Fitur cadangan Google Drive hanya aktif bila pengguna menekan “Hubungkan Google Drive” di aplikasi dan memberikan izin. Aplikasi meminta izin berikut:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/drive.file</code> — membuat folder “Cadangan Aplikasi Manajemen Kost” serta membuat, memperbarui, membaca, dan menghapus file cadangan yang <b>dibuat oleh aplikasi ini sendiri</b>. Aplikasi tidak dapat melihat atau mengubah file lain di Google Drive pengguna.</li>
+  <li><code>openid</code> dan <code>email</code> — hanya untuk menampilkan alamat email akun yang terhubung di dalam aplikasi.</li>
+</ul>
+<p>Cara data Google digunakan:</p>
+<ul>
+  <li>File cadangan (berisi data aplikasi milik pengguna) dikirim langsung dari komputer pengguna ke Google Drive milik pengguna, dan hanya diunduh kembali saat pengguna memulihkan data.</li>
+  <li>Token akses Google disimpan hanya di komputer pengguna dan tidak disertakan di dalam file cadangan.</li>
+  <li>Data tidak dijual, tidak dibagikan kepada pihak ketiga, dan tidak dipakai untuk iklan atau melatih model AI.</li>
+</ul>
+<p>Penggunaan informasi yang diterima dari Google API mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, termasuk persyaratan Limited Use.</p>
+
+<h2>4. Menghapus akses dan data</h2>
+<ul>
+  <li>Di aplikasi: Pengaturan → Cadangan Google Drive → <b>Putuskan</b>. Token dihapus dari komputer dan akses dicabut.</li>
+  <li>Di akun Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> → pilih Aplikasi Manajemen Kost → hapus akses.</li>
+  <li>File cadangan dapat dihapus kapan saja dari folder “Cadangan Aplikasi Manajemen Kost” di Google Drive.</li>
+  <li>Data di komputer dihapus dengan menghapus folder <code>data</code> aplikasi.</li>
+</ul>
+
+<h2>5. Perubahan dan kontak</h2>
+<p>Bila kebijakan ini berubah, tanggal berlaku di atas diperbarui. Pertanyaan: <a href="mailto:firmanmochamad09@gmail.com">firmanmochamad09@gmail.com</a> atau WhatsApp <a href="https://wa.me/6285777551485">0857-7755-1485</a>.</p>
+
+<hr>
+<h1 style="font-size:24px">Privacy Policy (English)</h1>
+<p><b>Aplikasi Manajemen Kost</b> (Boarding House Management App) is a desktop application installed and run on the user's own computer. All room, tenant, rent billing, payment and bookkeeping records are stored locally in the app's <code>data</code> folder. The developer (Mochamad Firman, Fizard Studio) operates no server for this app and never receives user data. WhatsApp messages are sent by the user from their own WhatsApp; license codes are verified offline.</p>
+<p>The optional Google Drive backup requests <code>drive.file</code> (create, read and manage only the backup folder “Cadangan Aplikasi Manajemen Kost” and files created by this app), plus <code>openid</code> and <code>email</code> (to display the connected account). Backups are uploaded directly from the user's computer to the user's own Google Drive and are downloaded only when the user restores. OAuth tokens stay on the user's computer and are excluded from backups. Data is not sold, shared with third parties, used for advertising, or used to train AI models. Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>Users can disconnect in the app (Settings → Google Drive backup → Disconnect) or revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Contact: <a href="mailto:firmanmochamad09@gmail.com">firmanmochamad09@gmail.com</a></p>
+<footer>Aplikasi Manajemen Kost · dibuat oleh <a href="../">Fizard Studio</a> · Bandung</footer>
+</div></body></html>
