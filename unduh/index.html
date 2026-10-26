@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unduh Aplikasi — Fizard Studio</title>
+<meta name="description" content="Unduh Aplikasi SPP Sekolah dan Aplikasi Manajemen Kost. Coba langsung di komputer Windows selama 3 hari, tanpa internet.">
+<meta property="og:title" content="Unduh Aplikasi SPP Sekolah &amp; Aplikasi Kost"><meta property="og:description" content="Coba langsung di komputer Windows selama 3 hari, tanpa internet."><meta property="og:type" content="website">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d2433;--muted:#5b6475;--line:#e3e1da;--brand:#1f6f5c;--brand-ink:#fff;--accent:#e9f3ef;--wa:#1f9e55;--warn:#a5521b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13161c;--card:#1b1f27;--ink:#e8eaee;--muted:#a3abba;--line:#2b313c;--brand:#4fb394;--brand-ink:#0d1a15;--accent:#1c2a25;--wa:#2fbf6c;--warn:#e39a62}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand)}img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.hero{padding:40px 0 28px}
+.eyebrow{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--brand);font-weight:700}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:8px 0 14px}
+h2{font-size:clamp(24px,4.5vw,32px);line-height:1.2;margin:0 0 14px}
+h3{font-size:19px;margin:0 0 6px}
+.lede{font-size:clamp(17px,2.6vw,20px);color:var(--muted);max-width:44em;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.wa{background:var(--wa);color:#fff}.btn.ghost{border:2px solid var(--line);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{background:var(--accent);border-radius:999px;padding:5px 12px;font-size:14px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.hero-shot{margin-top:28px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card p{margin:0;color:var(--muted)}
+.pain li{margin:0 0 8px}
+ul.check{list-style:none;padding:0;margin:0;columns:2 260px;column-gap:28px}
+ul.check li{padding-left:28px;position:relative;margin:0 0 8px;break-inside:avoid}
+ul.check li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:800}
+.shots{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shots figcaption{padding:10px 14px;font-size:15px;color:var(--muted)}
+.shots.phones{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.phone{display:grid;gap:20px;grid-template-columns:minmax(0,220px) 1fr;align-items:center}
+@media (max-width:620px){.phone{grid-template-columns:1fr}.phone img{max-width:220px;margin:0 auto}}
+video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:16px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--accent);font-size:14px}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:15px;color:var(--muted);margin:12px 0 0}
+.example{background:var(--accent);border-radius:12px;padding:16px 18px;margin-top:16px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 60px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:800;display:grid;place-items:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+.cta{background:var(--brand);color:var(--brand-ink);border-radius:18px;padding:28px 22px;text-align:center}
+.cta p{opacity:.9}.cta .btn.wa{background:#fff;color:#14593f}
+footer{padding:28px 0 90px;color:var(--muted);font-size:15px}
+.float{position:fixed;right:16px;bottom:16px;z-index:9;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+
+.dl{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.dl .card{display:flex;flex-direction:column;gap:10px}
+.dl .card p{margin:0}
+.dl .meta{font-size:14px;color:var(--muted)}
+.dl .btn{justify-content:center}
+.btn.pri{background:var(--brand);color:var(--brand-ink)}
+.small{font-size:15px;color:var(--muted)}
+</style>
+</head><body><div class="wrap">
+<header class="hero">
+<div class="eyebrow">Fizard Studio · unduhan</div>
+<h1>Coba sendiri di komputer Anda</h1>
+<p class="lede">Unduh, ekstrak, lalu klik dua kali. Berjalan di komputer Windows tanpa internet. Tanpa kode lisensi, aplikasi bisa dipakai penuh selama <b>3 hari</b>. Setelah itu hubungi kami untuk kode lisensi.</p>
+</header>
+
+<section><div class="dl">
+<div class="card"><h3>Aplikasi SPP Sekolah</h3><p>Kuitansi, tunggakan, tagih orang tua lewat WhatsApp. Untuk TK sampai SMA.</p>
+<div class="meta">Versi 1.6.0 · Windows 10/11 · sekitar 3,3 MB</div>
+<a class="btn pri" href="AplikasiSPP.zip" download>⬇ Unduh Aplikasi SPP</a>
+<a class="small" href="../spp/">Lihat fitur &amp; harga →</a></div>
+<div class="card"><h3>Aplikasi Manajemen Kost</h3><p>Peta kamar, tagihan sewa otomatis, kuitansi, tagih penghuni lewat WhatsApp.</p>
+<div class="meta">Versi 1.2.0 · Windows 10/11 · sekitar 3,3 MB</div>
+<a class="btn pri" href="AplikasiKost.zip" download>⬇ Unduh Aplikasi Kost</a>
+<a class="small" href="../kost/">Lihat fitur &amp; harga →</a></div>
+</div></section>
+
+<section><h2>Cara mencoba</h2>
+<ol class="steps">
+<li><b>Ekstrak zip</b><br><span class="small">Klik kanan file zip, pilih <i>Extract All</i>. Jangan dijalankan dari dalam zip.</span></li>
+<li><b>Lihat data contoh</b><br><span class="small">Klik dua kali <b>Jalankan-DEMO.bat</b>. Browser terbuka berisi data contoh. Masuk dengan <b>admin / rahasia1</b>.</span></li>
+<li><b>Pakai untuk data sendiri</b><br><span class="small">Klik dua kali file <b>.exe</b>, isi nama sekolah / kost dan buat akun admin. Masa coba 3 hari dimulai.</span></li>
+</ol>
+<p class="note">Bila Windows menampilkan “Windows protected your PC”, klik <b>More info</b> lalu <b>Run anyway</b>. Bila Firewall bertanya, izinkan <b>Private networks</b> supaya bisa dibuka dari HP.</p>
+</section>
+
+<section><h2>Pertanyaan</h2>
+<details><summary>Setelah 3 hari bagaimana?</summary><p>Data tetap aman dan bisa dilihat atau dicetak, tetapi tidak bisa menambah data. Hubungi kami, setelah pembayaran Anda menerima kode lisensi yang tinggal ditempel di menu Pengaturan. Data yang sudah diisi tetap terpakai.</p></details>
+<details><summary>Apakah data saya dikirim ke internet?</summary><p>Tidak. Semua data disimpan di komputer Anda sendiri. Cadangan ke Google Drive hanya aktif bila Anda membeli dan menyalakan modul Cadangan Google Drive, dan tersimpan di Drive milik Anda.</p></details>
+<details><summary>Butuh bantuan memasang atau ingin demo langsung?</summary><p>Hubungi kami lewat WhatsApp. Demo lewat video call atau datang langsung (area Bandung), gratis.</p></details>
+</section>
+
+<section><div class="cta"><h2>Sudah mencoba dan cocok?</h2><p>Kirim pesan untuk kode lisensi atau pertanyaan harga.</p>
+<a class="btn wa" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20sudah%20mencoba%20aplikasi%20dari%20halaman%20unduhan.%20Aplikasi%3A%20%28SPP%20/%20Kost%29.%20Nama%20sekolah/kost%3A%20...%20Mohon%20info%20lisensi.">💬 Hubungi lewat WhatsApp</a></div></section>
+
+<footer>Dibuat oleh <a href="../">Fizard Studio</a> · Bandung · <a href="../spp/privacy.html">Privasi SPP</a> · <a href="../kost/privacy.html">Privasi Kost</a><br>Mitra tim lapangan: bagikan halaman ini ke calon pembeli, tidak perlu meminta file ke kami.</footer>
+</div>
+<a class="btn wa float" href="https://wa.me/6285777551485?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20aplikasi%20dari%20halaman%20unduhan." aria-label="Tanya lewat WhatsApp">💬 Tanya</a>
+</body></html>
