@@ -158,6 +158,18 @@ footer{padding-top:24px;font-family:var(--mono);font-size:12px;color:var(--muted
       </article>
 
       <article class="project">
+        <header><h3>Data clean-up &amp; spreadsheet automation — three open-source samples</h3><span class="status">Oct 2026 · code and tests on GitHub</span></header>
+        <div class="tags"><span class="tag">Python + pandas</span><span class="tag">Google Apps Script</span><span class="tag">Excel VBA</span><span class="tag">Unit tests</span><span class="tag">Synthetic data</span></div>
+        <div class="cols">
+          <div><h4>Problem</h4><p>Most small businesses run on exports and spreadsheets: CRM dumps with duplicate customers, order sheets typed by hand, a new Excel file from every branch every month. Cleaning them by hand is slow, and the mistakes end up in reports.</p></div>
+          <div><h4>What I built</h4><ul><li><b>Customer Data Cleaner</b> (Python): normalises names, e-mails, phone numbers to E.164, dates and amounts; removes exact and same-person duplicates; every removed or rejected row is logged with a reason</li><li><b>Order Sheet Automation</b> (Google Sheets): a Data Tools menu that imports a CSV, validates every row, builds a summary with a chart and e-mails a daily report</li><li><b>Sales Consolidator</b> (Excel): one button merges monthly sheets or a folder of workbooks into a clean master table, flags bad rows and summarises revenue</li></ul></div>
+          <div><h4>Result</h4><p>Nothing is dropped silently: each input row ends up clean, in a duplicates log, or on an issues list with the reason.</p><ul><li><b>200,000</b> messy rows cleaned in under <b>4 seconds</b></li><li>Google Sheets sample: <b>126</b> rows in, <b>115</b> clean orders, <b>11</b> flagged</li><li>Excel sample: <b>127</b> rows from 3 months, <b>120</b> clean, <b>7</b> flagged in <b>0.2 s</b></li></ul></div>
+        </div>
+        <div class="shots"><a href="img/da-cleaner.jpg" data-cap="Python cleaner: before and after on a messy customer export"><img src="img/da-cleaner.jpg" alt="Python cleaner: before and after on a messy customer export" loading="lazy"></a><a href="img/da-sheets-summary.jpg" data-cap="Google Sheets: summary by month, product and status"><img src="img/da-sheets-summary.jpg" alt="Google Sheets: summary by month, product and status" loading="lazy"></a><a href="img/da-sheets-errors.jpg" data-cap="Google Sheets: every flagged row with the exact reason"><img src="img/da-sheets-errors.jpg" alt="Google Sheets: every flagged row with the exact reason" loading="lazy"></a><a href="img/da-excel-summary.jpg" data-cap="Excel: revenue by region and product after consolidation"><img src="img/da-excel-summary.jpg" alt="Excel: revenue by region and product after consolidation" loading="lazy"></a><a href="img/da-excel-issues.jpg" data-cap="Excel: issues sheet with source sheet, row and reason"><img src="img/da-excel-issues.jpg" alt="Excel: issues sheet with source sheet, row and reason" loading="lazy"></a></div>
+        <div class="numbers demo"><a href="video/order-sheet-automation-demo.mp4">▶ Google Sheets demo (68 s)</a><a href="video/sales-consolidator-demo.mp4">▶ Excel demo (46 s)</a><a href="https://github.com/fizardstudio/fizardstudio.github.io/tree/main/data-automation">Source code on GitHub →</a><span>English captions · synthetic data</span></div>
+      </article>
+
+      <article class="project">
         <header><h3>Field verification tooling for land-data contractors</h3><span class="status">2025–2026 · internal tools</span></header>
         <div class="tags"><span class="tag">Electron</span><span class="tag">Node.js</span><span class="tag">OCR (ML Kit)</span><span class="tag">Hardware-locked licensing</span></div>
         <div class="cols">
