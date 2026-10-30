@@ -27,3 +27,7 @@ Background: years of verifying and reconciling land-registry data, plus
 building internal business applications (Laravel/PHP, Go, MySQL).
 
 All sample data in this repository is synthetic.
+
+## License
+
+This code is shown as a portfolio sample. All rights reserved; contact me for licensing. See [LICENSE](LICENSE).

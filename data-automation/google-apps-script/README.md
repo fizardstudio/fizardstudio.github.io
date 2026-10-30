@@ -48,3 +48,7 @@ Optional: put a report recipient in `Settings!B1` (default is your own address).
   the previous day because of the script's time zone.
 
 All names and e-mails in the sample are fictional.
+
+## License
+
+This code is shown as a portfolio sample. All rights reserved; contact me for licensing. See [LICENSE](../LICENSE).

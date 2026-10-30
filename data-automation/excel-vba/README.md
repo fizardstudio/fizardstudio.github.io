@@ -36,3 +36,7 @@ read-only and never modifies it), `CleanMaster`, `BuildSummary`.
 * Source files are opened read-only, and the original monthly sheets are never changed
 
 Windows Excel 2013 or newer. (`ConsolidateFolder` uses the Windows folder picker.)
+
+## License
+
+This code is shown as a portfolio sample. All rights reserved; contact me for licensing. See [LICENSE](../LICENSE).
