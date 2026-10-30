@@ -1,0 +1,15 @@
+{
+  "rows_in": 1000,
+  "rows_clean": 892,
+  "rows_rejected": 11,
+  "duplicates_removed": 97,
+  "exact_duplicates": 39,
+  "same_person_duplicates": 58,
+  "emails_auto_fixed": 47,
+  "invalid_emails_blanked": 10,
+  "invalid_phones_blanked": 0,
+  "phones_normalised": 990,
+  "invalid_dates": 4,
+  "unknown_countries": 0,
+  "seconds": 0.06
+}
