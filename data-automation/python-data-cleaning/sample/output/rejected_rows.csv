@@ -1,0 +1,12 @@
+customer_id,full_name,email,phone,city,country,signup_date,total_spend,reason
+C1000026,,jessica.moore26@example.com,(845) 314-7379,sydney,Australia,09 Oct 2022,2474,missing name
+C1000026,,jessica.moore26@example.com,(845) 314-7379,sydney,Australia,09 Oct 2022,2474,missing name
+C1000125,,ROBERT.GARCIA125@EXAMPLE.ORG,+1 369 029 5939,New York,United States,07-25-2024,USD 1659.19,missing name
+C1000164,,mary.johnson164@mail.example.net,(784) 498-9266,Toronto,Canada,2019/11/15,1885,missing name
+C1000253,,budi.jones253@example.org,(823) 216-1107,LONDON,United Kingdom,2019/06/24, 543.55 ,missing name
+C1000125,,ROBERT.GARCIA125@EXAMPLE.ORG,+1 369 029 5939,New York,United States,07-25-2024,USD 1659.19,missing name
+C1000354,,elizabeth.williams354 at demo.test,+443511131290,Manchester,GB,16 Mar 2022,USD 4042.69,email auto-fixed; missing name
+C1000450,,dewi.williams450@example.com,0019162028123,Los Angeles,united states,"April 10, 2020",USD 4428.09,missing name
+C1000586,,JESSICA.TAYLOR586@EXAMPLE.COM,766-343-9252,Singapore,SG,"March 24, 2023",507.80,missing name
+C1000777,,charles.brown777@example.org,397-269-9994,LOS ANGELES,USA,2020-10-20, 558.91 ,missing name
+C1000898,,ROBERT.TAYLOR898@EXAMPLE.ORG,415-848-5805,Sydney,AU,2023/06/24,$936.42,missing name

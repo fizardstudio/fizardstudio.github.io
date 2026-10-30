@@ -1,0 +1,127 @@
+order_id,order_date,customer,email,product,qty,unit_price,status
+ord-1073,2024-02-04,olivia jones,olivia.jones@example.com,Water Bottle,5,15,new
+ord-1105,02/04/2024,olivia jones,olivia.jones@example.com,Canvas Tote,4,18,new
+ord-1085,23/03/2024,Emma  Wilson,EMMA.WILSON@EXAMPLE.COM,Canvas Tote,1,18,Paid
+ord-1044,2024-02-03,Emma  Wilson,emma.wilson@example.com,Notebook A5,3,7.25,Paid
+ord-1041,05/04/2024,liam brown,liam.brown@example.com,Ceramic Mug,1,$12.50,lost in transit
+ord-1106,2024-03-09,liam brown,LIAM.BROWN@EXAMPLE.COM,Desk Lamp,1,39.90,refunded
+ord-1043,2024-03-03,ahmad fauzi,AHMAD.FAUZI@EXAMPLE.COM,Water Bottle,2,$15.00,cancelled
+ord-1077,31 May 2024,  maria garcia,maria.garcia@example.com,Desk Lamp,5,39.9,shipped
+ord-1054,07 May 2024,olivia jones,olivia.jones@example.com,Water Bottle,2,15,shipped
+ord-1059,29 Apr 2024,jane doe,jane.doe@example.com,Desk Lamp,4,39.90,paid
+ord-1086,2024-03-28,JOHN SMITH,john.smith@example.com,Canvas Tote,4,18.00,new
+ord-1013,2024-05-09,jane doe,JANE.DOE@EXAMPLE.COM,Notebook A5,5,7.25,canceled
+ord-1015,21/03/2024,  maria garcia,maria.garcia@example.com,Desk Lamp,4,39.9,canceled
+ord-1098,04 Mar 2024,ahmad fauzi,ahmad.fauzi@example.com,Ceramic Mug,3,12.5,new
+ord-1031,2024-01-12,Wei Chen,missing@,Desk Lamp,4,39.90,Paid
+ord-1009,04 Jun 2024,  maria garcia,maria.garcia@example.com,Notebook A5,5,7.25,Paid
+ord-1042,09/06/2024,Emma  Wilson,emma.wilson@example.com,Desk Lamp,4,$39.90,paid
+ord-1079,14/04/2024,Emma  Wilson,emma.wilson@example.com,Water Bottle,4,$15.00,canceled
+ord-1011,31/02/2024,liam brown,LIAM.BROWN@EXAMPLE.COM,Canvas Tote,4,$18.00,Paid
+ord-1034,2024-03-31,Wei Chen,wei.chen@example.com,Ceramic Mug,2,12.50,done
+ord-1097,2024-06-01,ahmad fauzi,ahmad.fauzi@example.com,Notebook A5,3,$7.25,refunded
+ord-1110,2024-06-25,  maria garcia,maria.garcia@example.com,Canvas Tote,1,18.00,done
+ord-1120,2024-04-04,liam brown,liam.brown@example.com,Desk Lamp,4,$39.90,paid
+ord-1102,30 Mar 2024,jane doe,jane.doe@example.com,Desk Lamp,4,39.9,Paid
+ord-1116,2024-06-13,Emma  Wilson,emma.wilson@example.com,Notebook A5,5,7.25,new
+ord-1117,18 Apr 2024,JOHN SMITH,john.smith@example.com,Water Bottle,3,15.00,paid
+ord-1033,14 Jan 2024,JOHN SMITH,john.smith@example.com,Notebook A5,4,7.25,paid
+ord-1087,2024-01-28,liam brown,liam.brown@example.com,Ceramic Mug,2,12.5,cancelled
+ord-1089,06/01/2024,olivia jones,olivia.jones@example.com,Desk Lamp,1,$39.90,pending
+ord-1075,2024-01-29,ahmad fauzi,AHMAD.FAUZI@EXAMPLE.COM,Water Bottle,5,15.00,Paid
+ord-1074,26/03/2024,olivia jones,olivia.jones@example.com,Water Bottle,3,15.00,refunded
+ord-1052,2024-04-17,liam brown,liam.brown@example.com,Water Bottle,2,$15.00,cancelled
+ord-1109,27 Mar 2024,ahmad fauzi,ahmad.fauzi@example.com,Ceramic Mug,2,12.5,done
+ord-1003,20/05/2024,liam brown,liam.brown@example.com,Canvas Tote,5,18.00,cancelled
+ord-1107,24 Jan 2024,JOHN SMITH,john.smith@example.com,Notebook A5,1,7.25,paid
+ord-1055,2024-03-09,  maria garcia,maria.garcia@example.com,Water Bottle,5,15.00,pending
+ord-1092,2024-02-23,  maria garcia,maria.garcia@example.com,Water Bottle,1,15.00,shipped
+ord-1081,2024-06-18,olivia jones,olivia.jones@example.com,Canvas Tote,2,$18.00,done
+ord-1066,22 Apr 2024,ahmad fauzi,ahmad.fauzi@example.com,Ceramic Mug,3,12.5,new
+ord-1080,24 Jun 2024,ahmad fauzi,AHMAD.FAUZI@EXAMPLE.COM,Desk Lamp,1,39.90,Paid
+ord-1007,07 Mar 2024,liam brown,liam.brown@example.com,Notebook A5,5,$7.25,new
+ord-1035,2024-03-11,jane doe,jane.doe@example.com,Desk Lamp,1,$39.90,pending
+ord-1072,16 Feb 2024,liam brown,LIAM.BROWN@EXAMPLE.COM,Notebook A5,4,$7.25,paid
+ord-1062,12/01/2024,  maria garcia,MARIA.GARCIA@EXAMPLE.COM,Desk Lamp,1,39.90,Paid
+ord-1064,08/01/2024,Emma  Wilson,emma.wilson@example.com,Desk Lamp,2,39.90,refunded
+ord-1028,10/01/2024,  maria garcia,MARIA.GARCIA@EXAMPLE.COM,Canvas Tote,5,18,cancelled
+ord-1018,06/01/2024,  maria garcia,maria.garcia@example.com,Ceramic Mug,4,$12.50,new
+ord-1115,01/06/2024,liam brown,liam.brown@example.com,Canvas Tote,4,18.00,pending
+ord-1016,27 Jan 2024,ahmad fauzi,ahmad.fauzi@example.com,Desk Lamp,2,39.9,pending
+ord-1012,12 Jan 2024,jane doe,jane.doe@example.com,Desk Lamp,5,$39.90,pending
+ord-1071,22/05/2024,  maria garcia,maria.garcia@example.com,Desk Lamp,1,39.90,Paid
+ord-1120,2024-04-04,liam brown,liam.brown@example.com,Desk Lamp,4,$39.90,paid
+ord-1113,2024-01-26,ahmad fauzi,ahmad.fauzi@example.com,Ceramic Mug,2,$12.50,Paid
+ord-1024,2024-04-22,JOHN SMITH,john.smith@example.com,Notebook A5,5,7.25,refunded
+ord-1058,02/03/2024,olivia jones,olivia.jones@example.com,Canvas Tote,4,18,done
+ord-1023,2024-03-24,liam brown,liam.brown@example.com,Ceramic Mug,3,$12.50,done
+ord-1030,19/05/2024,Wei Chen,wei.chen@example.com,Ceramic Mug,1,$12.50,done
+ord-1051,06 Jun 2024,liam brown,liam.brown@example.com,,3,$7.25,canceled
+ord-1050,20/05/2024,  maria garcia,maria.garcia@example.com,Ceramic Mug,2,12.50,refunded
+ord-1104,23/06/2024,  maria garcia,maria.garcia@example.com,Desk Lamp,3,39.9,shipped
+ord-1001,01 Mar 2024,  maria garcia,maria.garcia@example.com,Notebook A5,5,$7.25,Paid
+ord-1076,17 Feb 2024,Wei Chen,wei.chen@example.com,Water Bottle,4,15,shipped
+ord-1083,2024-06-17,  maria garcia,maria.garcia@example.com,Desk Lamp,1,39.9,paid
+ord-1022,25 May 2024,  maria garcia,maria.garcia@example.com,Notebook A5,3,7.25,done
+ord-1003,20/05/2024,liam brown,liam.brown@example.com,Canvas Tote,5,18.00,cancelled
+ord-1094,24/04/2024,liam brown,liam.brown@example.com,Ceramic Mug,2,12.50,cancelled
+ord-1017,21/04/2024,ahmad fauzi,ahmad.fauzi@example.com,Water Bottle,5,$15.00,new
+ord-1069,14 Jun 2024,  maria garcia,maria.garcia@example.com,Canvas Tote,4,18,Paid
+ord-1002,2024-06-04,olivia jones,olivia.jones@example.com,Notebook A5,4,7.25,canceled
+ord-1038,08/05/2024,Emma  Wilson,emma.wilson@example.com,Canvas Tote,4,$18.00,cancelled
+ord-1032,13 Feb 2024,ahmad fauzi,ahmad.fauzi@example.com,Canvas Tote,5,18,cancelled
+ord-1099,2024-01-24,liam brown,liam.brown@example.com,Ceramic Mug,1,12.50,paid
+ord-1046,24 May 2024,JOHN SMITH,john.smith@example.com,Water Bottle,2,$15.00,done
+ord-1088,07/05/2024,JOHN SMITH,john.smith@example.com,Water Bottle,4,15.00,pending
+ord-1084,02 Apr 2024,Wei Chen,WEI.CHEN@EXAMPLE.COM,Water Bottle,1,15,new
+ord-1013,2024-05-09,jane doe,JANE.DOE@EXAMPLE.COM,Notebook A5,5,7.25,canceled
+ord-1078,2024-05-25,Wei Chen,wei.chen@example.com,Notebook A5,1,$7.25,refunded
+ord-1091,23/02/2024,Emma  Wilson,emma.wilson@example.com,Canvas Tote,2,18,shipped
+ord-1047,2024-04-09,JOHN SMITH,JOHN.SMITH@EXAMPLE.COM,Water Bottle,2,$15.00,paid
+ord-1029,23 May 2024,Wei Chen,wei.chen@example.com,Ceramic Mug,5,12.5,pending
+ord-1070,28 Jan 2024,  maria garcia,maria.garcia@example.com,Notebook A5,5,7.25,cancelled
+ord-1068,2024-05-14,olivia jones,olivia.jones@example.com,Water Bottle,3,15,shipped
+ord-1118,2024-03-26,liam brown,LIAM.BROWN@EXAMPLE.COM,Desk Lamp,3,39.90,shipped
+ord-1108,25/04/2024,Emma  Wilson,EMMA.WILSON@EXAMPLE.COM,Notebook A5,4,7.25,Paid
+ord-1040,02 Feb 2024,jane doe,jane.doe@example.com,Desk Lamp,2,39.9,paid
+ord-1111,2024-03-14,Wei Chen,wei.chen@example.com,Water Bottle,5,15,new
+ord-1021,17/02/2024,Emma  Wilson,emma.wilson@example.com,Water Bottle,0,$15.00,paid
+ord-1048,2024-03-28,jane doe,jane.doe@example.com,Ceramic Mug,3,12.5,pending
+ord-1119,22 Feb 2024,Wei Chen,wei.chen@example.com,Water Bottle,5,15,cancelled
+ord-1049,2024-01-23,Wei Chen,wei.chen@example.com,Ceramic Mug,5,12.50,paid
+ord-1103,2024-03-16,liam brown,liam.brown@example.com,Ceramic Mug,3,12.5,canceled
+ord-1090,03/04/2024,olivia jones,olivia.jones@example.com,Water Bottle,2,$15.00,paid
+ord-1112,2024-05-17,olivia jones,olivia.jones@example.com,Canvas Tote,1,18.00,paid
+ord-1024,2024-04-22,JOHN SMITH,john.smith@example.com,Notebook A5,5,7.25,refunded
+ord-1114,13/06/2024,Emma  Wilson,emma.wilson@example.com,Desk Lamp,1,$39.90,pending
+ord-1010,2024-06-16,ahmad fauzi,ahmad.fauzi@example.com,Notebook A5,4,$7.25,Paid
+ord-1100,2024-06-23,jane doe,jane.doe@example.com,Canvas Tote,1,$18.00,done
+ord-1053,25 Jun 2024,olivia jones,olivia.jones@example.com,Canvas Tote,2,18.00,Paid
+ord-1039,30/05/2024,Emma  Wilson,emma.wilson@example.com,Notebook A5,4,$7.25,Paid
+ord-1057,2024-03-19,ahmad fauzi,ahmad.fauzi@example.com,Desk Lamp,2,39.90,new
+ord-1014,2024-01-09,liam brown,liam.brown@example.com,Notebook A5,1,7.25,new
+ord-1019,22/06/2024,ahmad fauzi,AHMAD.FAUZI@EXAMPLE.COM,Desk Lamp,1,39.90,new
+ord-1037,2024-01-12,jane doe,jane.doe@example.com,Ceramic Mug,1,12.50,canceled
+ord-1101,16 Jun 2024,Emma  Wilson,emma.wilson@example.com,Canvas Tote,3,$18.00,refunded
+ord-1115,01/06/2024,liam brown,liam.brown@example.com,Canvas Tote,4,18.00,pending
+ord-1026,12/03/2024,JOHN SMITH,john.smith@example.com,Water Bottle,4,15.00,pending
+ord-1095,11/01/2024,olivia jones,olivia.jones@example.com,Ceramic Mug,2,12.50,Paid
+ord-1060,2024-04-29,Wei Chen,wei.chen@example.com,Ceramic Mug,2,$12.50,done
+ord-1045,28 Apr 2024,JOHN SMITH,john.smith@example.com,Water Bottle,1,15,new
+ord-1005,08/01/2024,olivia jones,olivia.jones@example.com,Water Bottle,4,$15.00,cancelled
+ord-1056,20 Jun 2024,liam brown,liam.brown@example.com,Water Bottle,3,15,done
+ord-1063,08/03/2024,jane doe,jane.doe@example.com,Notebook A5,3,7.25,paid
+ord-1036,04/03/2024,liam brown,liam.brown@example.com,Ceramic Mug,1,12.50,shipped
+ord-1027,12/05/2024,olivia jones,olivia.jones@example.com,Notebook A5,4,$7.25,cancelled
+ord-1096,09/04/2024,Wei Chen,wei.chen@example.com,Canvas Tote,3,18.00,Paid
+ord-1025,2024-03-10,JOHN SMITH,john.smith@example.com,Ceramic Mug,3,12.50,shipped
+ord-1006,27/05/2024,  maria garcia,MARIA.GARCIA@EXAMPLE.COM,Notebook A5,4,7.25,done
+ord-1061,2024-03-07,  maria garcia,maria.garcia@example.com,Water Bottle,3,15.00,shipped
+ord-1082,2024-05-15,jane doe,jane.doe@example.com,Water Bottle,1,$15.00,pending
+ord-1008,16 May 2024,liam brown,liam.brown@example.com,Water Bottle,1,$15.00,pending
+ord-1067,25/04/2024,ahmad fauzi,ahmad.fauzi@example.com,Ceramic Mug,5,$12.50,canceled
+ord-1065,2024-04-10,Emma  Wilson,emma.wilson@example.com,Ceramic Mug,4,12.50,Paid
+ord-1038,08/05/2024,Emma  Wilson,emma.wilson@example.com,Canvas Tote,4,$18.00,cancelled
+ord-1020,05 Mar 2024,olivia jones,olivia.jones@example.com,Notebook A5,2,$7.25,new
+ord-1093,29 Jan 2024,  maria garcia,maria.garcia@example.com,Desk Lamp,1,39.90,cancelled
+ord-1004,04 Jan 2024,JOHN SMITH,john.smith@example.com,Canvas Tote,1,18,pending

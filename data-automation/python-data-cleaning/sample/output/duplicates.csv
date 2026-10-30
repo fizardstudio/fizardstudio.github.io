@@ -1,0 +1,98 @@
+customer_id,full_name,email,phone,kept_customer_id,match_type
+C4159546,Ahmad Garcia,ahmad.garcia270@example.org,+625063459112,C1000270,same email
+C1000203,Ahmad Rodriguez,ahmad.rodriguez203@example.org,+15122099499,C1000203,exact
+C2913049,Barbara Brown,barbara.brown41@example.org,+448098593174,C1000041,same email
+C7111514,Barbara Pratama,barbara.pratama103@demo.test,+17836134074,C1000103,same email
+C9981848,Barbara Smith,barbara.smith488@example.com,+16658833987,C1000488,same email
+C2189815,Barbara Taylor,barbara.taylor398@example.com,+17579064771,C1000398,same email
+C1000040,Barbara Wijaya,barbara.wijaya40@mail.example.net,+625247451712,C1000040,exact
+C1000325,Budi Jones,budi.jones325@example.org,+16771183727,C1000325,exact
+C1000325,Budi Jones,budi.jones325@example.org,+16771183727,C1000325,exact
+C5082173,Budi Miller,budi.miller7@example.org,+442578713315,C1000007,same email
+C5082173,Budi Miller,budi.miller7@example.org,+442578713315,C1000007,exact
+C1000116,Budi Smith,budi.smith116@example.com,+14641383670,C1000116,exact
+C1000225,Charles Johnson,charles.johnson225@mail.example.net,+444047128144,C1000225,exact
+C1000218,Charles Jones,charles.jones218@example.org,+628615814876,C1000218,exact
+C1473717,Charles Saputra,charles.saputra132@example.org,+19914856467,C1000132,same email
+C7573147,David Brown,david.brown600@mail.example.net,+13391304488,C1000600,same email
+C1875823,David Garcia,david.garcia29@mail.example.net,+14711671902,C1000029,same email
+C2065035,David Miller,david.miller629@example.com,+18345506882,C1000629,same email
+C1580613,David Miller,david.miller771@mail.example.net,+628492663295,C1000771,same email
+C6207848,David Wilson,david.wilson382@mail.example.net,+654371470827,C1000382,same email
+C1000152,Dewi Pratama,dewi.pratama152@demo.test,+443394522885,C1000152,exact
+C9286653,Dewi Santoso,dewi.santoso65@example.org,+627691251778,C1000065,same email
+C1000355,Dewi Smith,dewi.smith355@example.com,+615538909728,C1000355,exact
+C1000193,Dewi Wilson,dewi.wilson193@example.com,+658983684577,C1000193,exact
+C7918250,Elizabeth Taylor,elizabeth.taylor479@mail.example.net,+13687611249,C1000479,same email
+C7587916,Elizabeth Thomas,elizabeth.thomas10@demo.test,+622234309805,C1000010,same email
+C4963902,Elizabeth Wilson,elizabeth.wilson559@demo.test,+619346997990,C1000559,same email
+C1661769,James Johnson,james.johnson45@mail.example.net,+623617711592,C1000045,same email
+C5358202,James Miller,james.miller86@mail.example.net,+448739363854,C1000086,same email
+C4353806,Jennifer Garcia,jennifer.garcia15@example.org,+619256342160,C1000015,same email
+C1000790,Jennifer Garcia,jennifer.garcia790@demo.test,+16053347047,C1000790,exact
+C1000051,Jennifer Hidayat,jennifer.hidayat51@demo.test,+17277997995,C1000051,exact
+C4162204,Jennifer Pratama,jennifer.pratama177@mail.example.net,+448479552763,C1000177,same email
+C3109911,Jennifer Thomas,jennifer.thomas5@example.com,+656669784801,C1000005,same email
+C1000005,Jennifer Thomas,jennifer.thomas5@example.com,+656669784801,C1000005,exact
+C6242557,Jennifer Williams,jennifer.williams134@demo.test,+445628902330,C1000134,same email
+C1000114,Jessica Anderson,jessica.anderson114@mail.example.net,+616208635365,C1000114,exact
+C2913352,Jessica Anderson,jessica.anderson345@example.com,+617184438612,C1000345,same email
+C7818732,Jessica Brown,jessica.brown24@example.com,+653745299124,C1000024,same email
+C2135470,Jessica Brown,jessica.brown24@example.com,+653745299124,C1000024,same email
+C7294416,Jessica Brown,jessica.brown746@example.org,+623360107126,C1000746,same email
+C5245272,Jessica Miller,jessica.miller357@mail.example.net,+19826170243,C1000357,same email
+C1000442,Jessica Pratama,jessica.pratama442@example.org,+659206496935,C1000442,exact
+C8492990,Jessica Thomas,jessica.thomas324@example.com,+625511856724,C1000324,same email
+C1918370,Jessica Wijaya,jessica.wijaya69@example.com,+627470168733,C1000069,same email
+C2492738,John Rodriguez,john.rodriguez328@example.com,+654013649718,C1000328,same email
+C1000664,Joseph Anderson,joseph.anderson664@mail.example.net,+442852386003,C1000664,exact
+C7307818,Karen Martinez,karen.martinez739@demo.test,+628526925596,C1000739,same email
+C1000048,Karen Pratama,karen.pratama48@demo.test,+14402445502,C1000048,exact
+C1000033,Karen Santoso,karen.santoso33@mail.example.net,+625348247710,C1000033,exact
+C1000230,Karen Taylor,karen.taylor230@example.com,+13128639174,C1000230,exact
+C1000686,Karen Williams,karen.williams686@example.org,+18131935923,C1000686,exact
+C2632292,Linda Johnson,linda.johnson79@example.org,+15426841459,C1000079,same email
+C1000027,Linda Martinez,linda.martinez27@mail.example.net,+656788568557,C1000027,exact
+C3653705,Linda Santoso,linda.santoso305@example.org,+19479303614,C1000305,same email
+C1000184,Linda Wijaya,linda.wijaya184@demo.test,+653484631224,C1000184,exact
+C4816586,Mary Davis,mary.davis19@example.com,+624176936763,C1000019,same email
+C2287332,Mary Davis,mary.davis19@example.com,+624176936763,C1000019,same email
+C8539654,Mary Smith,mary.smith181@demo.test,+615114921643,C1000181,same email
+C9459346,Mary Williams,mary.williams121@demo.test,+449263838065,C1000121,same email
+C9669396,Mary Williams,mary.williams121@demo.test,+449263838065,C1000121,same email
+C9448643,Mary Williams,mary.williams209@mail.example.net,+443561681472,C1000209,same email
+C5438490,Michael Pratama,michael.pratama8@demo.test,+17973763116,C1000008,same email
+C1000123,Michael Santoso,michael.santoso123@mail.example.net,+629270103930,C1000123,exact
+C1000346,Michael Smith,michael.smith346@example.com,+14126620157,C1000346,exact
+C1000433,Michael Taylor,michael.taylor433@example.com,+658261139898,C1000433,exact
+C1000012,Patricia Williams,patricia.williams12@mail.example.net,+629842513542,C1000012,exact
+C1142249,Putri Anderson,putri.anderson159@example.org,+13821009968,C1000159,same email
+C4449113,Putri Davis,putri.davis110@demo.test,+624137918055,C1000110,same email
+C3201710,Putri Martinez,putri.martinez210@demo.test,+619548995299,C1000210,same email
+C6932624,Putri Martinez,putri.martinez210@demo.test,+619548995299,C1000210,same email
+C1000129,Putri Taylor,putri.taylor129@mail.example.net,+629418625652,C1000129,exact
+C1000004,Richard Rodriguez,richard.rodriguez4@mail.example.net,+15953767242,C1000004,exact
+C5636611,Richard Saputra,richard.saputra495@demo.test,+17289812317,C1000495,same email
+C6204580,Richard Thomas,richard.thomas529@example.org,+615776755562,C1000529,same email
+C1000676,Richard Thomas,richard.thomas676@example.com,+619459011079,C1000676,exact
+C1663497,Rizky Saputra,rizky.saputra49@demo.test,+659022901476,C1000049,same email
+C1000100,Rizky Williams,rizky.williams100@demo.test,+657825537147,C1000100,exact
+C1000261,Robert Anderson,robert.anderson261@example.org,+12056165565,C1000261,exact
+C6623607,Robert Smith,robert.smith44@demo.test,+13950240268,C1000044,same email
+C1000050,Robert Taylor,robert.taylor50@demo.test,+623885160607,C1000050,exact
+C1000190,Sarah Jones,sarah.jones190@example.org,+654565118102,C1000190,exact
+C2046686,Sarah Santoso,sarah.santoso199@example.com,+655069804204,C1000199,same email
+C1000381,Sarah Smith,sarah.smith381@demo.test,+13462961367,C1000381,exact
+C4297008,Siti Davis,siti.davis192@demo.test,+654886195761,C1000192,same email
+C3808418,Siti Hidayat,siti.hidayat25@example.com,+18058651850,C1000025,same email
+C3808418,Siti Hidayat,siti.hidayat25@example.com,+18058651850,C1000025,exact
+C6066600,Siti Santoso,siti.santoso212@mail.example.net,+626272785760,C1000212,same email
+C5819613,Susan Brown,susan.brown58@example.com,+449410369711,C1000058,same email
+C1000196,Thomas Davis,thomas.davis196@example.org,+18679981364,C1000196,exact
+C1000196,Thomas Davis,thomas.davis196@example.org,+18679981364,C1000196,exact
+C6423634,Thomas Pratama,thomas.pratama17@demo.test,+448615951484,C1000017,same email
+C4894730,Thomas Wijaya,thomas.wijaya56@example.com,+613392407581,C1000056,same email
+C6991310,William Davis,william.davis645@demo.test,+612984802205,C1000645,same email
+C4606999,William Hidayat,william.hidayat302@example.com,+443539840289,C1000302,same email
+C3644334,William Hidayat,william.hidayat302@example.com,+443539840289,C1000302,same email
+C1000059,William Smith,william.smith59@demo.test,+17531952058,C1000059,exact
