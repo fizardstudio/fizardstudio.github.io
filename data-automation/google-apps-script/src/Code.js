@@ -42,7 +42,8 @@ function importCsvFromDrive() {
   var m = res.getResponseText().match(/[-\w]{25,}/);
   if (!m) { ui.alert('That does not look like a Drive file link or id.'); return; }
 
-  var text = DriveApp.getFileById(m[0]).getBlob().getDataAsString('UTF-8').replace(/^﻿/, '');
+  var text = DriveApp.getFileById(m[0]).getBlob().getDataAsString('UTF-8');
+  if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);   // drop a UTF-8 byte-order mark
   var rows = Utilities.parseCsv(text);
   if (rows.length < 2) { ui.alert('The file has no data rows.'); return; }
 
