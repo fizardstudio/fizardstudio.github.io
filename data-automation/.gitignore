@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+python-data-cleaning/output/
+.DS_Store
+~$*
